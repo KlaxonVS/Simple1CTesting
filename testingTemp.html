@@ -4,6 +4,9 @@
 <head>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
     <script src="./testingTemp.js" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./testingTemp.css">
     <title>{{ title }}</title>
 </head>
@@ -11,8 +14,8 @@
 <body>
     <div id="app" v-cloak>
         
-        <div v-if="titleScreen === true">
-            <h1>The Test</h1>
+        <div id="titleScreen" v-if="titleScreen === true">
+            <h1 id="titleScreen-title">The Test</h1>
             <p>Settings:</p>
             <ul>
                 <li>Allow tips: <input type="checkbox" v-model="allowTip"></li>

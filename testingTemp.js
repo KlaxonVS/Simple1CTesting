@@ -16,7 +16,7 @@ const jsonData = {
                             "text": "Answer 2",
                             "isCorrect": false
                         },
-                        {
+                            {
                             "text": "Answer 3",
                             "isCorrect": false
                         }

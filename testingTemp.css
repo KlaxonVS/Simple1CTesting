@@ -1,20 +1,50 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: medium;
+* {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
-    margin-top: 10%;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+} 
+
+body {
     background-color: white;
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
 }
 
 [v-cloak] {
     display: none;
 }
 
-.answer {
+#app {
+    width: 80%;
+    height: 90%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    background-color: whitesmoke;
+}
+
+/* body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    padding: 0;
+    margin: 10%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+} */
+
+
+
+/* .answer {
     display: flex;
 }
 
@@ -58,3 +88,16 @@ button {
     font-style: italic;
     text-decoration: underline;
 }
+
+#titleScreen {
+    text-align: left;
+    font-size: medium;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 1em;
+    justify-content: left;
+}
+
+#titleScreen-title {
+    text-align: center;
+} */
