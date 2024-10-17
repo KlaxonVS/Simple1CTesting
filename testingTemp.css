@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+    margin-top: 10%;
+    background-color: white;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+[v-cloak] {
+    display: none;
+}
+
+.answer {
+    display: flex;
+}
+
+.answer-checkbox {
+    order: -1;
+}
+
+#showResult {
+    background-color: orange;
+    font-weight: bold;
+}
+
+input, button {
+    margin: 5px;
+    border-radius: 3px;
+}
+
+button {
+    background-color: whitesmoke;
+    border: 1px solid black;
+}
+
+.chapter, .question {
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 5px;
+    margin-left: 1px;
+    padding: 5px;
+}
+
+.chapter-title {
+    font-size: large;
+    font-weight: bold;
+}
+
+.question-title {
+    font-weight: bold;
+}
+
+.answer {
+    font-style: italic;
+    text-decoration: underline;
+}
