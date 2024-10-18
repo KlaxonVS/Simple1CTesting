@@ -45,10 +45,10 @@ const jsonData = {
                         }
                     ],
                     "multiple": true,
-                    "img": "test-img.jpg",
+                    "img": "images/test-img.jpg",
                     "comment": {
                         "text": "Comment 1",
-                        "img": "test-img.jpg"
+                        "img": "images/test-img.jpg"
                     }
                 }
             ]
@@ -73,7 +73,9 @@ const TestO = {
             showTip: false,
             titleScreen: true,
             allowTip: true,
-            allowCheck: true
+            allowCheck: true,
+            correctAnswers: [],
+            answerElents: []
         }
     },
     methods: {
@@ -94,6 +96,20 @@ const TestO = {
         },
         lCheckAnswer () {
             checkAnswer(this);
+            if (this.correctAnswers.length === 0) {
+                return;
+            }
+            let answerEl = document.getElementsByName(`CheckAnswer-${this.chapterIndx}-${this.questionIndx}`);
+            console.log(answerEl);
+            for (let i = 0; i < answerEl.length; i++) {
+                let el = answerEl[i];
+                let chEl = document.getElementById(`Answer-${this.chapterIndx}-${this.questionIndx}-${i}`);
+                if (this.correctAnswers.includes(i)) {
+                    chEl.classList.add('right-answer');
+                } else if (el.checked && !this.correctAnswers.includes(i)) {
+                    chEl.classList.add('wrong-answer');
+                }
+            }
         },
         lShowResult () {
             this.msg = '';
@@ -205,15 +221,18 @@ function checkAnswer(pageO) {
         pageO.msg = "Нужно выбрать хотя бы один вариант ответа";
     } else {
         pageO.msg = (
-            (checkAnswerInternal(pageO.chaptersData, answers, pageO.chapterIndx, pageO.questionIndx)) 
+            (checkAnswerInternal(pageO.chaptersData, answers, pageO.chapterIndx, pageO.questionIndx, pageO.correctAnswers)) 
             ? "Верно" : "Неверно"
         );    
     }
 
 }
 
-function checkAnswerInternal(chaptersData, answers, chapterIndx, questionIndx) {
+function checkAnswerInternal(chaptersData, answers, chapterIndx, questionIndx,correctAnswers = undefined) {
     let result = false;
+    if (correctAnswers === undefined) {
+        correctAnswers = [];
+    }
     if (answers.length === 0) {
         result = false;
     } else {
@@ -221,6 +240,9 @@ function checkAnswerInternal(chaptersData, answers, chapterIndx, questionIndx) {
         let allAnswers = chaptersData[chapterIndx].questions[questionIndx].answers;
         let allAnswersLen = allAnswers.length;
         for (let i = 0; i < allAnswersLen; i++) {
+            if (allAnswers[i].isCorrect) {
+                correctAnswers.push(i);
+            }
             if (allAnswers[i].isCorrect === true && answers.includes(i)) {
                 isCorrect += 1;
             }
@@ -244,5 +266,5 @@ function showResult(pageO) {
             totalQ += 1;
         }
     }
-    pageO.msg = `Всего вопросов: ${totalQ}, правильных ответов: ${rightAnswers}\nПравильных ответов в процентах: ${(rightAnswers / totalQ * 100).toFixed(2)}%`;
+    pageO.msg = `Правильных ответов: ${(rightAnswers / totalQ * 100).toFixed(2)}% (${rightAnswers}/${totalQ})`;
 }

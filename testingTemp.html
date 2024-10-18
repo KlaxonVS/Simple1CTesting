@@ -8,21 +8,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./testingTemp.css">
-    <title>{{ title }}</title>
+    <title>Title</title>
 </head>
 
 <body>
+    <div class="header">
+        <h1>Header</h1>
+    </div>
     <div id="app" v-cloak>
         
         <div id="titleScreen" v-if="titleScreen === true">
+        <div id="titleScreen-content">
             <h1 id="titleScreen-title">The Test</h1>
-            <p>Settings:</p>
-            <ul>
-                <li>Allow tips: <input type="checkbox" v-model="allowTip"></li>
-                <li>Allow checking: <input type="checkbox" v-model="allowCheck"></li>
+            <div id="titleScreen-settings">
+            <p class="listTitle">Settings:</p>
+            <ul class="list">
+                <li class="listItem">Allow tips: <input type="checkbox" v-model="allowTip"></li>
+                <li class="listItem">Allow checking: <input type="checkbox" v-model="allowCheck"></li>
             </ul>
-            <button v-on:click="titleScreen = false">{{ msg !== '' ? 'Restart' : 'Start' }} </button>
+            </div>
+            <button class="pageButton" v-on:click="titleScreen = false">{{ msg !== '' ? 'Restart' : 'Start' }} </button>
             <p v-if="msg !== ''">Результат: <p>{{ msg }}</p> </p>
+        </div>
         </div>
         <div v-else>
         <div v-for="(chapter, indexC) in chaptersData" class="chapterDiv">
@@ -32,21 +39,24 @@
                 <div v-for="(question, indexQ) in chapter.questions" class="questionDiv">
                     <!-- Question -->
                     <div class="question" v-show="questionIndx === indexQ">
-                        <img v-if="question.img !== undefined" v-bind:src="'./' + question.img">
+                        <img class="question-img" v-if="question.img !== undefined" v-bind:src="'./' + question.img">
                         <p class="question-title">{{ question.title }}</p>
                         <!-- Answers -->
                         <ol class="answers">
-                            <li class="answer" v-for="(answer, indexA) in question.answers">
-                                <input v-if="question.multiple" class="aCheckbox" type="checkbox" name="CheckAnswer-{{ indexC }}-{{ indexQ }}" v-on:change="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
-                                <input v-else class="aRadio" type="radio" name="RadioAnswer-{{ indexC }}-{{ indexQ }}" v-on:click="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
-                                {{ answer.text }}
+                            <div class="answer-template" v-for="(answer, indexA) in question.answers">
+                            <input v-if="question.multiple" class="aCheckbox" type="checkbox" v-bind:name="'CheckAnswer-' + indexC + '-' + indexQ" v-on:change="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
+                                <input v-else class="aRadio" type="radio" v-bind:name="'CheckAnswer-' + indexC + '-' + indexQ" v-on:click="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
+                            <li class="answer" v-bind:id="'Answer-' + indexC + '-' + indexQ + '-' + indexA">
+                                <label class="aText">{{ answer.text }}</label>
                             </li>
+                        </div>
                         </ol>
                         <!-- Tip -->
                         <div class="qComment" v-show="showTip">
-                            <p>Tip</p>
+                            <button v-show="allowTip" v-on:click="showTip = !showTip">Hide Tip</button>
+                            <p class="qComment-title">Tip: </p>
                             <p>{{ question.comment.text }}</p>
-                            <img v-if="question.comment.img !== undefined" v-bind:src="'./' + question.comment.img">
+                            <img class="qComment-img" v-if="question.comment.img !== undefined" v-bind:src="'./' + question.comment.img">
                         </div>
                     </div>
                 </div>
@@ -60,8 +70,10 @@
             <button v-show="allowTip" v-on:click="showTip = !showTip">Show/Hide Tip</button>
             <button v-show="qIsLast" id="showResult" v-on:click="lShowResult()">Result</button>
         </menu>
-        <p v-if="msg !== ''">Статус: {{ msg }}</p>
         </div>
+    </div>
+    <div class="footer">
+        <p>© 2024</p>
     </div>
 </body>
 
