@@ -18,6 +18,7 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     /* flex-wrap: wrap; */
+    z-index: -100;
 
 }
 
@@ -35,6 +36,7 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: left;
+    position: relative;
     
 }
 
@@ -42,6 +44,7 @@ body {
     text-align: center;
     background-color: white;
     border-radius: 1em;
+    position: relative;
 }
 
 button {
@@ -51,6 +54,18 @@ button {
     border: none;
     box-shadow: 0.1em 0.1em 0.1em 0.1em black;
     font-size: large;
+    cursor: pointer;
+}
+
+input[type=checkbox], input[type=radio]
+{
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  transform: scale(2);
+  padding: 10px;
+  margin: 0.5em;
 }
 
 #titleScreen-content {
@@ -71,11 +86,12 @@ button {
 
 .listTitle {
     font-weight: bold;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .listItem {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
+    margin-right: 1em;
 }
 .answers {
     list-style-position: inside;
@@ -85,7 +101,7 @@ button {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .chapter-title, .qComment-title {
@@ -97,12 +113,13 @@ button {
 .question-title {
     font-weight: bold;
     font-size: x-large;
-    margin-bottom: 0.5em;
+    margin-bottom: 1.5em;
 }
 
 .question-img, .qComment-img {
     max-width: 100%;
     max-height: 100%;
+    align-self: center;
 }
 
 .right-answer {
@@ -117,4 +134,51 @@ button {
 
 [v-cloak] {
     display: none !important;
+}
+
+@property --angel {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+#app::after, #app::before {
+    content: "";
+    background-image: conic-gradient(from var(--angel), transparent, white, gray, white, transparent);
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: calc(100% + 0.5em);
+    top: calc(-0.25em);
+    left: calc(-0.25em);
+    border-radius: 1em;
+    z-index: -1;
+    animation: spin 3s linear infinite;
+}
+
+.header::after, .header::before, .footer::after, .footer::before {
+    content: "";
+    background-image: conic-gradient(from var(--angel), transparent, white, gray, white, transparent);
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: calc(100% + 0.5em);
+    top: calc(-0.25em);
+    left: calc(-0.25em);
+    border-radius: 1em;
+    z-index: -1;
+    animation: spin 3s linear infinite;
+    
+}
+
+.header::before, .footer::before, #app::before {
+    filter: blur(em);
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    from {
+        --angel: 0deg;
+    }
+    to {
+        --angel: 360deg;
+    }
 }

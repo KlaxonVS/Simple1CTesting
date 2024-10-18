@@ -8,26 +8,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./testingTemp.css">
-    <title>Title</title>
+    <title>Тестирование</title>
 </head>
 
 <body>
     <div class="header">
-        <h1>Header</h1>
+        <h1>Тестирование</h1>
     </div>
     <div id="app" v-cloak>
         
         <div id="titleScreen" v-if="titleScreen === true">
         <div id="titleScreen-content">
-            <h1 id="titleScreen-title">The Test</h1>
+            <h1 id="titleScreen-title">Тест</h1>
             <div id="titleScreen-settings">
-            <p class="listTitle">Settings:</p>
+            <p class="listTitle">Настройки:</p>
             <ul class="list">
-                <li class="listItem">Allow tips: <input type="checkbox" v-model="allowTip"></li>
-                <li class="listItem">Allow checking: <input type="checkbox" v-model="allowCheck"></li>
+                <li class="listItem">Включить подсказки: <input type="checkbox" v-model="allowTip"></li>
+                <li class="listItem">Включить проверку ответа: <input type="checkbox" v-model="allowCheck"></li>
             </ul>
             </div>
-            <button class="pageButton" v-on:click="titleScreen = false">{{ msg !== '' ? 'Restart' : 'Start' }} </button>
+            <button class="pageButton" v-on:click="titleScreen = false">{{ msg !== '' ? 'Начать сначала' : 'Начать' }} </button>
             <p v-if="msg !== ''">Результат: <p>{{ msg }}</p> </p>
         </div>
         </div>
@@ -64,11 +64,11 @@
         </div>
         <!-- Menu -->
         <menu>
-            <button v-show="!qIsFirst" v-on:click="lChangeQuestion(-1)">Previous question</button>
-            <button v-show="allowCheck" v-on:click="lCheckAnswer()">Check answer</button>
-            <button v-show="!qIsLast" v-on:click="lChangeQuestion(1)">Next question</button>
-            <button v-show="allowTip" v-on:click="showTip = !showTip">Show/Hide Tip</button>
-            <button v-show="qIsLast" id="showResult" v-on:click="lShowResult()">Result</button>
+            <button v-show="!qIsFirst" v-on:click="lChangeQuestion(-1)">Назад</button>
+            <button v-show="allowCheck" v-on:click="lCheckAnswer()">Проверить ответ</button>
+            <button v-show="!qIsLast" v-on:click="lChangeQuestion(1)">Следующий</button>
+            <button v-show="allowTip" v-on:click="showTip = !showTip">Показать/скрыть подсказку</button>
+            <button v-show="qIsLast" id="showResult" v-on:click="lShowResult()">Результат</button>
         </menu>
         </div>
     </div>
