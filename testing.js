@@ -1,7 +1,7 @@
-{
+TestDataSrc = {
     "chapters": [
         {
-            "title": "Общие механизмы, понятия и термины",
+            "title": "Общие механизмы, понятия и термины.",
             "questions": [
                 {
                     "title": "В какое значение можно установить свойство \"Серии кодов\" объекта конфигурации \"Справочник\"?",
@@ -27,7 +27,35 @@
                             "isCorrect": true
                         }
                     ],
-                    "type": "single"
+                    "multiple": false,
+                    "img": null,
+                    "comment": {
+                        "text": "Comment 1",
+                        "img": null
+                    }
+                },
+                {
+                    "title": "Question 2",
+                    "answers": [
+                        {
+                            "text": "Answer 1",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Answer 2",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Answer 3",
+                            "isCorrect": true
+                        }
+                    ],
+                    "multiple": true,
+                    "img": "images/test-img.jpg",
+                    "comment": {
+                        "text": "Comment 1",
+                        "img": "images/test-img.jpg"
+                    }
                 }
             ]
         }

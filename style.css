@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
+    color: white;
 }
 
 html, body {
@@ -10,7 +11,7 @@ html, body {
     background-repeat: repeat;
     height: 100%;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif;
     font-size: large;
     padding: 0;
     margin: 0;
@@ -27,7 +28,7 @@ body {
 }
 
 #app {
-    background-color: white;
+    background-color: black;
     margin: 1em;
     padding: 2em;
     border-radius: 1em;
@@ -42,21 +43,16 @@ body {
 
 .header, .footer {
     text-align: center;
-    background-color: white;
+    background-color: black;
     border-radius: 1em;
     position: relative;
 }
 
-button {
-    padding: 0.5em;
+.footer {
+    display: inline-flex;
+    justify-content: space-evenly;
     margin: 0.5em;
-    border-radius: 1em;
-    border: none;
-    box-shadow: 0.1em 0.1em 0.1em 0.1em black;
-    font-size: large;
-    cursor: pointer;
 }
-
 input[type=checkbox], input[type=radio]
 {
   -ms-transform: scale(2); /* IE */
@@ -120,16 +116,23 @@ input[type=checkbox], input[type=radio]
     max-width: 100%;
     max-height: 100%;
     align-self: center;
+    margin-bottom: 1em;
 }
 
 .right-answer {
     font-weight: bold;
-    background-color:  #90EE90;
+    background-color:  #8cec8c;
+    color: black;
 }
 
 .wrong-answer {
     background-color:#FF7276;
     font-weight: bold;
+    color: black;
+}
+
+.aText {
+    color: inherit;
 }
 
 [v-cloak] {
@@ -142,7 +145,7 @@ input[type=checkbox], input[type=radio]
     inherits: false;
 }
 
-#app::after, #app::before {
+#app::after, #app::before{
     content: "";
     background-image: conic-gradient(from var(--angel), transparent, white, gray, white, transparent);
     position: absolute;
@@ -151,8 +154,8 @@ input[type=checkbox], input[type=radio]
     top: calc(-0.25em);
     left: calc(-0.25em);
     border-radius: 1em;
-    z-index: -1;
-    animation: spin 3s linear infinite;
+    z-index: -2;
+    animation: spin 10s linear infinite;
 }
 
 .header::after, .header::before, .footer::after, .footer::before {
@@ -165,11 +168,37 @@ input[type=checkbox], input[type=radio]
     left: calc(-0.25em);
     border-radius: 1em;
     z-index: -1;
-    animation: spin 3s linear infinite;
+    animation: spin 10s linear infinite;
     
 }
 
-.header::before, .footer::before, #app::before {
+.pageButton {
+    background-color: black !important;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 1em;
+    font-size: large;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.pageButton-wrapper::after, .pageButton::before {
+    content: "";
+    background-image: conic-gradient(from var(--angel), transparent, white, gray, white, transparent);
+    position: absolute;
+    width: calc(100% + 0.5em);
+    height: calc(100% + 0.5em);
+    top: calc(-0.25em);
+    left: calc(-0.25em);
+    border-radius: 1em;
+    z-index: -2;
+    animation: spin 10s linear infinite;
+    
+}
+
+.header::before, .footer::before, #app::before, .pageButton::before {
     filter: blur(em);
     opacity: 0.5;
 }
@@ -182,3 +211,4 @@ input[type=checkbox], input[type=radio]
         --angel: 360deg;
     }
 }
+

@@ -1,31 +1,37 @@
-
-
-const jsonData = {
+const TestDataSrc = {
     "chapters": [
         {
-            "title": "Chapter 1",
+            "title": "Общие механизмы, понятия и термины.",
             "questions": [
                 {
-                    "title": "Question 1",
+                    "title": "В какое значение можно установить свойство \"Серии кодов\" объекта конфигурации \"Справочник\"?",
                     "answers": [
                         {
-                            "text": "Answer 1",
+                            "text": "Во всем справочнике",
                             "isCorrect": true
                         },
                         {
-                            "text": "Answer 2",
+                            "text": "В пределах подчинения",
                             "isCorrect": false
                         },
-                            {
-                            "text": "Answer 3",
+                        {
+                            "text": "В пределах подчинения владельцу",
                             "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Верны все указанные ответы",
+                            "isCorrect": true
                         }
                     ],
                     "multiple": false,
-                    "img": undefined,
+                    "img": null,
                     "comment": {
                         "text": "Comment 1",
-                        "img": undefined
+                        "img": null
                     }
                 },
                 {
@@ -65,8 +71,7 @@ const TestO = {
             lInput: '',
             chapterIndx: 0,
             questionIndx: 0,
-            chaptersData: getChapters(this),
-            Answers: initAnswers(this),
+            testData: TestDataSrc,
             msg: '',
             qIsFirst: true,
             qIsLast: false,
@@ -75,7 +80,9 @@ const TestO = {
             allowTip: true,
             allowCheck: true,
             correctAnswers: [],
-            answerElents: []
+            answerElents: [],
+            chaptersData: getChapters(this),
+            Answers: initAnswers(this)
         }
     },
     methods: {
@@ -108,6 +115,9 @@ const TestO = {
                     chEl.classList.add('right-answer');
                 } else if (el.checked && !this.correctAnswers.includes(i)) {
                     chEl.classList.add('wrong-answer');
+                } else {
+                    chEl.classList.remove('right-answer');
+                    chEl.classList.remove('wrong-answer');
                 }
             }
         },
@@ -115,6 +125,17 @@ const TestO = {
             this.msg = '';
             showResult(this);
             resetPage(this, true);
+        },
+        getJsonData() {
+            let responseData;
+            fetch('./testing.json', { method: 'GET', mode: 'no-cors' }).then(
+                response => { responseData = response.json() } ).catch(
+                    error => console.error('Error:', error)).then(
+                        data => {
+                            console.log(data);
+                        });
+                        
+            return responseData;
         }
     }
 }
@@ -122,10 +143,10 @@ const app = Vue.createApp(TestO).mount('#app');
 
 function initAnswers(pageO) {
     let answers = [];
-    chaptersQ = jsonData.chapters.length;
+    chaptersQ = pageO.testData.chapters.length;
     for (i = 0; i < chaptersQ; i++) {
         answers.push([]);
-        questionsQ = jsonData.chapters[i].questions.length;
+        questionsQ = pageO.testData.chapters[i].questions.length;
         for (j = 0; j < questionsQ; j++) {
             answers[i].push([]);
         }
@@ -141,7 +162,7 @@ function changeQuestion(pageO, direction) {
             pageO.questionIndx -= 1;
         } else if (pageO.questionIndx === 0) {
             pageO.chapterIndx -= 1;
-            pageO.questionIndx = jsonData.chapters[pageO.chapterIndx].questions.length - 1;
+            pageO.questionIndx = testData.chapters[pageO.chapterIndx].questions.length - 1;
         }
     } else if (direction === 1) {
         if (pageO.questionIndx < questionsQ - 1) {
@@ -151,8 +172,8 @@ function changeQuestion(pageO, direction) {
             pageO.questionIndx = 0;
         }
     }
-    chaptersQ = jsonData.chapters.length;
-    questionsQ = jsonData.chapters[pageO.chapterIndx].questions.length;
+    chaptersQ = pageO.testData.chapters.length;
+    questionsQ = pageO.testData.chapters[pageO.chapterIndx].questions.length;
     
     pageO.qIsFirst = (pageO.chapterIndx === 0 && pageO.questionIndx === 0);
     pageO.qIsLast = (pageO.chapterIndx === chaptersQ - 1 && pageO.questionIndx === questionsQ - 1);
@@ -171,8 +192,8 @@ function resetPage(pageO, resetAnswers = false) {
 }
 
 function getChapters(pageO) {
-    
-    return jsonData.chapters;
+    pageO.testData = TestDataSrc;
+    return pageO.testData.chapters;
 }
 
 function getJsonData() {
@@ -253,16 +274,16 @@ function checkAnswerInternal(chaptersData, answers, chapterIndx, questionIndx,co
 }
 
 function showResult(pageO) {
-    let chaptersQ = jsonData.chapters.length;
+    let chaptersQ = pageO.testData.chapters.length;
     let totalQ = 0;
     let rightAnswers = 0;
     
     for (let i = 0; i < chaptersQ; i++) {
-        questionQ = jsonData.chapters[i].questions.length;
+        questionQ = pageO.testData.chapters[i].questions.length;
         
         for (let j = 0; j < questionQ; j++) {
             let answer = pageO.Answers[i][j];
-            rightAnswers += checkAnswerInternal(jsonData.chapters, answer, i, j) ? 1 : 0;
+            rightAnswers += checkAnswerInternal(pageO.testData.chapters, answer, i, j) ? 1 : 0;
             totalQ += 1;
         }
     }
