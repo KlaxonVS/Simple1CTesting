@@ -860,12 +860,12 @@ const TestO = {
             processAnswer(this, indexC, indexQ, indexA, answer, checked);
         },
         lCheckAnswer () {
+            this.correctAnswers = [];
             checkAnswer(this);
             if (this.correctAnswers.length === 0) {
                 return;
             }
             let answerEl = document.getElementsByName(`CheckAnswer-${this.chapterIndx}-${this.questionIndx}`);
-            console.log(answerEl);
             for (let i = 0; i < answerEl.length; i++) {
                 let el = answerEl[i];
                 let chEl = document.getElementById(`Answer-${this.chapterIndx}-${this.questionIndx}-${i}`);
@@ -874,8 +874,8 @@ const TestO = {
                 } else if (el.checked && !this.correctAnswers.includes(i)) {
                     chEl.classList.add('wrong-answer');
                 } else {
-                    chEl.classList.remove('right-answer');
-                    chEl.classList.remove('wrong-answer');
+                    chEl.classList.contains('right-answer') ? chEl.classList.remove('right-answer') : null;
+                    chEl.classList.contains('wrong-answer') ? chEl.classList.remove('wrong-answer') : null;
                 }
             }
         },
@@ -908,17 +908,17 @@ const TestO = {
 const app = Vue.createApp(TestO).mount('#app');
 
 function initAnswers(pageO) {
-    let answers = [];
+    let answersL = [];
     chaptersQ = pageO.testData.chapters.length;
     for (i = 0; i < chaptersQ; i++) {
-        answers.push([]);
+        answersL.push([]);
         questionsQ = pageO.testData.chapters[i].questions.length;
         for (j = 0; j < questionsQ; j++) {
-            answers[i].push([]);
+            answersL[i].push([]);
         }
     }
     
-    return answers;
+    return answersL;
 
 }
 
@@ -1002,24 +1002,18 @@ function processAnswer(pageO, indexC, indexQ, indexA, answer, checked) {
 }
 
 function checkAnswer(pageO) {
-    let answers = pageO.Answers[pageO.chapterIndx][pageO.questionIndx];
+    let answersL2 = pageO.Answers[pageO.chapterIndx][pageO.questionIndx];
     pageO.msg = "";
-    if (answers.length === 0) {
-        pageO.msg = "Нужно выбрать хотя бы один вариант ответа";
+    if (answersL2.length === 0) {
+        alert("Нужно выбрать хотя бы один вариант ответа!");
     } else {
-        pageO.msg = (
-            (checkAnswerInternal(pageO.chaptersData, answers, pageO.chapterIndx, pageO.questionIndx, pageO.correctAnswers)) 
-            ? "Верно" : "Неверно"
-        );    
+        checkAnswerInternal(pageO.chaptersData, answersL2, pageO.chapterIndx, pageO.questionIndx, pageO.correctAnswers);    
     }
 
 }
 
-function checkAnswerInternal(chaptersData, answers, chapterIndx, questionIndx,correctAnswers = undefined) {
+function checkAnswerInternal(chaptersData, answers, chapterIndx, questionIndx, correctAnswers) {
     let result = false;
-    if (correctAnswers === undefined) {
-        correctAnswers = [];
-    }
     if (answers.length === 0) {
         result = false;
     } else {
@@ -1045,11 +1039,12 @@ function showResult(pageO) {
     let rightAnswers = 0;
     
     for (let i = 0; i < chaptersQ; i++) {
-        questionQ = pageO.testData.chapters[i].questions.length;
+        let questionQ = pageO.testData.chapters[i].questions.length;
         
         for (let j = 0; j < questionQ; j++) {
             let answer = pageO.Answers[i][j];
-            rightAnswers += checkAnswerInternal(pageO.testData.chapters, answer, i, j) ? 1 : 0;
+            let correctAnswers = [];
+            rightAnswers += checkAnswerInternal(pageO.testData.chapters, answer, i, j, correctAnswers) ? 1 : 0;
             totalQ += 1;
         }
     }
