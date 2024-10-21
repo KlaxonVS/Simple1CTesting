@@ -33,6 +33,7 @@
             </div>
             <button class="pageButton" v-on:click="titleScreen = false">{{ msg !== '' ? 'Начать сначала' : 'Начать' }} </button>
             <p v-if="msg !== ''">Результат: <p>{{ msg }}</p> </p>
+            <p class="postScriptum">*Вопросы в процессе обработки. 1 из 14 разделов вопросов доступен.</p>
         </div>
         </div>
         <div v-else>
@@ -75,7 +76,6 @@
             <button class="pageButton" v-show="qIsLast" id="showResult" v-on:click="lShowResult()">Результат</button>
         </menu>
         </div>
-        <p class="postScriptum">*Вопросы в процессе обработки. 1 из 14 разделов вопросов доступен.</p>
     </div>
     <div class="footer">
         <p class="footer-text"><a href="https://t.me/techSupportKlaxonVS">Техподдержка и обратная связь.</a></p>
