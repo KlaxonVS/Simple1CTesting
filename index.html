@@ -70,8 +70,8 @@
         <!-- Menu -->
         <menu>
             <button class="pageButton" v-show="!qIsFirst" v-on:click="lChangeQuestion(-1)">Назад</button>
-            <button class="pageButton" v-show="allowCheck" v-on:click="lCheckAnswer()">Проверить ответ</button>
             <button class="pageButton" v-show="!qIsLast" v-on:click="lChangeQuestion(1)">Следующий</button>
+            <button class="pageButton" v-show="allowCheck" v-on:click="lCheckAnswer()">Проверить ответ</button>
             <button class="pageButton" v-show="allowTip && hasTip" v-on:click="showTip = !showTip">Показать/скрыть подсказку</button>
             <button class="pageButton" v-show="qIsLast" id="showResult" v-on:click="lShowResult()">Результат</button>
         </menu>
