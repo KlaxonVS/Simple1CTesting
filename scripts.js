@@ -2371,6 +2371,17 @@ const TestO = {
                 this.hasTip = true;
             } else
                 this.hasTip = false;
+        },
+        chooseAnswer(indexC, indexQ, indexA, answer) {
+            let answerEl = document.getElementsByName(`CheckAnswer-${indexC}-${indexQ}`);
+            for (let i = 0; i < answerEl.length; i++) {
+                let el = answerEl[i];
+                if (i === indexA) {
+                    el.checked = true;
+                    processAnswer(this, indexC, indexQ, indexA, answer, true);
+                    break;
+                }
+            } 
         }
 
     }

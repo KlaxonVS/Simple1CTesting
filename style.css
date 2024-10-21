@@ -102,8 +102,8 @@ input[type=checkbox], input[type=radio]
 }
 
 .aCheckbox, .aRadio {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
 .chapter-title, .qComment-title {

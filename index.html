@@ -52,7 +52,7 @@
                             <input v-if="question.multiple" class="aCheckbox" type="checkbox" v-bind:name="'CheckAnswer-' + indexC + '-' + indexQ" v-on:change="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
                                 <input v-else class="aRadio" type="radio" v-bind:name="'CheckAnswer-' + indexC + '-' + indexQ" v-on:click="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
                             <li class="answer" v-bind:id="'Answer-' + indexC + '-' + indexQ + '-' + indexA">
-                                <label class="aText">{{ answer.text }}</label>
+                                <label class="aText" v-on:click="chooseAnswer(indexC, indexQ, indexA, answer)">{{ answer.text }}</label>
                             </li>
                         </div>
                         </ol>
