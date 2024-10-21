@@ -1635,6 +1635,180 @@ const TestDataSrc = {
                         "text": "",
                         "img": ""
                     }
+                },
+                {
+                    "title": "При создании нового документа и отказа от его записи номер документа:",
+                    "answers": [
+                        {
+                            "text": "не может быть использован другим документом",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "может быть использован другим документом",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "может или не может быть использован повторно, зависит от значения соответствующего свойства конфигурации",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "даже не назначался документу (назначение происходит при записи)",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "При создании нового Плана видов характеристик обязательно должны быть заполнены:",
+                    "answers": [
+                        {
+                            "text": "Свойство \"Тип значения характеристик\"",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Свойство \"Дополнительные значения характеристик\"",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Оба свойства могут быть не заполнены",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Обязательно должны быть заполнены свойства \"Тип значения характеристик\" и \"Дополнительные значения характеристик\"",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Произвольная (к примеру по прикладным механизмам) классификация объектов конфигурации осуществляется с помощью:",
+                    "answers": [
+                        {
+                            "text": "свойства \"Классификационная группа\" у объекта конфигурации",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "с помощью объекта конфигурация Подсистемы",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "заданием порядковых номеров объектов конфигурации по разным шаблонам",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 3",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Верны все варианты",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Роль, как объект конфигурации, отражает:",
+                    "answers": [
+                        {
+                            "text": "статус и сферу ответственности ее носителя как сотрудника компании",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "совокупность доступных определенному пользователю объектов в среде \"1С:Предприятие\"",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "совокупность прав действий в среде \"1С:Предприятие\" с возможностью присвоения конкретному пользователю",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "набор параметров пользователя",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "С какими СУБД работает система 1С:Предприятие 8?",
+                    "answers": [
+                        {
+                            "text": "Microsoft SQL Server",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Microsoft SQL Server, PostgreSQL",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Microsoft SQL Server, PostgreSQL, IBM DB2",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Microsoft SQL Server, PostgreSQL, IBM DB2, Oracle Database",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Microsoft SQL Server, PostgreSQL, IBM DB2, Oracle Database, файловая база данных",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Microsoft SQL Server, PostgreSQL, Oracle Database",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "С помощью какого свойства можно определить, какому документу принадлежит запись регистра?",
+                    "answers": [
+                        {
+                            "text": "Регистратор",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Документ",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "ТекущийДокумент",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Специального свойства у записи регистра нет. Для этих целей можно определить у регистра реквизит типа \"ДокументСсылка\"",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
                 }
             ]
         }
