@@ -101,6 +101,11 @@ input[type=checkbox], input[type=radio]
     margin-top: 0.5em;
 }
 
+.aCheckbox, .aRadio {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
 .chapter-title, .qComment-title {
     font-weight: bold;
     font-size: xx-large;
