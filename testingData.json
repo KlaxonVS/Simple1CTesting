@@ -1,4 +1,4 @@
-TestDataSrc = {
+{
     "chapters": [
         {
             "title": "Общие механизмы, понятия и термины.",
@@ -8,7 +8,7 @@ TestDataSrc = {
                     "answers": [
                         {
                             "text": "Во всем справочнике",
-                            "isCorrect": true
+                            "isCorrect": false
                         },
                         {
                             "text": "В пределах подчинения",
@@ -30,31 +30,54 @@ TestDataSrc = {
                     "multiple": false,
                     "img": null,
                     "comment": {
-                        "text": "Comment 1",
-                        "img": null
+                        "text": "",
+                        "img": ""
                     }
                 },
                 {
-                    "title": "Question 2",
+                    "title": "Question",
                     "answers": [
                         {
-                            "text": "Answer 1",
-                            "isCorrect": true
-                        },
-                        {
-                            "text": "Answer 2",
+                            "text": "Answer",
                             "isCorrect": false
                         },
                         {
-                            "text": "Answer 3",
-                            "isCorrect": true
+                            "text": "Answer",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Answer",
+                            "isCorrect": false
                         }
                     ],
-                    "multiple": true,
-                    "img": "images/test-img.jpg",
+                    "multiple": false,
+                    "img": "",
                     "comment": {
-                        "text": "Comment 1",
-                        "img": "images/test-img.jpg"
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Question",
+                    "answers": [
+                        {
+                            "text": "Answer",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Answer",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Answer",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
                     }
                 }
             ]

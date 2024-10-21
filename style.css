@@ -167,38 +167,25 @@ input[type=checkbox], input[type=radio]
     top: calc(-0.25em);
     left: calc(-0.25em);
     border-radius: 1em;
-    z-index: -1;
-    animation: spin 10s linear infinite;
-    
-}
-
-.pageButton {
-    background-color: black !important;
-    padding: 0.5em;
-    margin: 0.5em;
-    border-radius: 1em;
-    font-size: large;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    
-}
-
-.pageButton-wrapper::after, .pageButton::before {
-    content: "";
-    background-image: conic-gradient(from var(--angel), transparent, white, gray, white, transparent);
-    position: absolute;
-    width: calc(100% + 0.5em);
-    height: calc(100% + 0.5em);
-    top: calc(-0.25em);
-    left: calc(-0.25em);
-    border-radius: 1em;
     z-index: -2;
     animation: spin 10s linear infinite;
     
 }
 
-.header::before, .footer::before, #app::before, .pageButton::before {
+.pageButton {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: 0 0 1em whitesmoke;
+    padding: 0.5em;
+    margin: 0.5em;
+    border-radius: 1em;
+    font-size: large;
+    cursor: pointer;
+    
+    
+}
+
+.header::before, .footer::before, #app::before {
     filter: blur(em);
     opacity: 0.5;
 }
@@ -210,5 +197,11 @@ input[type=checkbox], input[type=radio]
     to {
         --angel: 360deg;
     }
+}
+
+.postScriptum {
+    font-size: small;
+    font-style: italic;
+    color: whitesmoke;
 }
 
