@@ -98,6 +98,7 @@ input[type=checkbox], input[type=radio]
     flex-direction: row;
     gap: 0.5em;
     margin-bottom: 1em;
+    margin-top: 0.5em;
 }
 
 .chapter-title, .qComment-title {
