@@ -181,14 +181,15 @@ input[type=checkbox], input[type=radio]
 .pageButton {
     background-color: white !important;
     color: black !important;
-    box-shadow: 0 0 1em whitesmoke;
     padding: 0.5em;
     margin: 0.5em;
     border-radius: 1em;
     font-size: large;
     cursor: pointer;
-    
-    
+}
+
+.pageButton:hover {
+    box-shadow: 0 0 1em whitesmoke;
 }
 
 .header::before, .footer::before, #app::before {
@@ -211,3 +212,36 @@ input[type=checkbox], input[type=radio]
     color: whitesmoke;
 }
 
+.chapterSelectionDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.chapterSelection-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 1em;
+}
+
+
+.listTitle-chapterSelection {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.chapterSelection-subte {
+    font-size: small;
+    font-style: italic;
+    color: whitesmoke;
+}

@@ -27,13 +27,24 @@
             <div id="titleScreen-settings">
             <p class="listTitle">Настройки:</p>
             <ul class="list">
-                <li class="listItem">Включить подсказки: <input type="checkbox" v-model="allowTip"></li>
+                <li class="listItem">Включить комментарии: <input type="checkbox" v-model="allowTip"></li>
                 <li class="listItem">Включить проверку ответа: <input type="checkbox" v-model="allowCheck"></li>
             </ul>
             </div>
-            <button class="pageButton" v-on:click="titleScreen = false">{{ msg !== '' ? 'Начать сначала' : 'Начать' }} </button>
+            <button class="pageButton" v-on:click="startTest()">{{ msg !== '' ? 'Начать сначала' : 'Начать' }}</button>
             <p v-if="msg !== ''">Результат: <p>{{ msg }}</p> </p>
-            <p class="postScriptum">*Вопросы в процессе обработки. 1 из 14 разделов вопросов доступен.</p>
+            <p class="postScriptum">*Вопросы в процессе обработки. 1 из 14 разделов вопросов доступен полностью. </p>
+            <div class="chapterSelectionDiv">
+                <p class="listTitle-chapterSelection">Разделы: <span class="chapterSelection-subte">*Если не выбрано ни одного раздела, то будут использованы все разделы.</span></p>
+                <div class="chapterSelection">
+                    <div class="chapterSelection-item" v-for="(chapter, indexC) in testData.chapters">
+                        <label class="chapterSelection-item-title" v-on:click="chooseChapter(indexC)">
+                            <input type="checkbox" v-bind:id="'chapterSelection-item-' + indexC" v-on:change="chooseChapter(indexC)">
+                            {{ indexC + 1 }}. {{ chapter.title }}
+                        </label>
+                    </div>
+                </div>
+            </div>
         </div>
         </div>
         <div v-else>
@@ -58,8 +69,8 @@
                         </ol>
                         <!-- Tip -->
                         <div class="qComment" v-show="showTip">
-                            <button class="pageButton" v-show="allowTip" v-on:click="showTip = !showTip">Скрыть подсказку</button>
-                            <p class="qComment-title">Подсказка: </p>
+                            <button class="pageButton" v-show="allowTip" v-on:click="showTip = !showTip">Скрыть комментарий</button>
+                            <p class="qComment-title">Комментарий: </p>
                             <p>{{ question.comment.text }}</p>
                             <img class="qComment-img" v-if="question.comment.img !== ''" v-bind:src="'./' + question.comment.img">
                         </div>
@@ -72,7 +83,7 @@
             <button class="pageButton" v-show="!qIsFirst" v-on:click="lChangeQuestion(-1)">Назад</button>
             <button class="pageButton" v-show="!qIsLast" v-on:click="lChangeQuestion(1)">Следующий</button>
             <button class="pageButton" v-show="allowCheck" v-on:click="lCheckAnswer()">Проверить ответ</button>
-            <button class="pageButton" v-show="allowTip && hasTip" v-on:click="showTip = !showTip">Показать/скрыть подсказку</button>
+            <button class="pageButton" v-show="allowTip && hasTip" v-on:click="showTip = !showTip">Показать/скрыть комментарий</button>
             <button class="pageButton" v-show="qIsLast" id="showResult" v-on:click="lShowResult()">Результат</button>
         </menu>
         </div>

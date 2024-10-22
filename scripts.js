@@ -2283,20 +2283,667 @@ const TestDataSrc = {
                     }
                 }
             ]
+        },
+        {
+            "title": "Редакторы и инструменты общие",
+            "questions": [
+                {
+                    "title": "HTML-редактор можно использовать:",
+                    "answers": [
+                        {
+                            "text": "Для создания текстовых документов",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Для создания HTML-документов",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Для создания документов в формате XML",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 2 и 3",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Верны все варианты",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Вызов HTML-редактора можно осуществить:",
+                    "answers": [
+                        {
+                            "text": "Через пункт главного меню \"Файл-Новый-HTML-документ\"",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Через пункт главного меню \"Файл-Открыть...\"",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "По кнопке \"Справочная информация\" окна свойств объекта конфигурации",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Верны все варианты",
+                            "isCorrect": true
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Закладка \"Текст\" HTML-редактора предназначена:",
+                    "answers": [
+                        {
+                            "text": "Для редактирования создаваемого документа в формате HTML",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Для редактирования создаваемого документа в формате XML",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Для редактирования создаваемого документа в визуальном режиме",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Можно ли в HTML-документ помещать картинки?",
+                    "answers": [
+                        {
+                            "text": "Нет, нельзя",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Можно, в любой части HTML-документа",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Можно, но только в тексте HTML-документа",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Редактор HTML-страниц...",
+                    "answers": [
+                        {
+                            "text": "Включен в платформу \"1С:Предприятия 8\"",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Поставляется в качестве дополнения",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Поставляется в комплекте с компонентой WEB-расширение",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Редактор HTML-страниц:",
+                    "answers": [
+                        {
+                            "text": "Позволяет вставить таблицу на закладке \"Редактирование\"",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Позволяет вставить таблицу на закладке \"Текст\"",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Позволяет вставить таблицу на закладке \"Просмотр\"",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Верны все варианты",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Не позволяет работать с таблицами",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Для редактирования текста модуля формы используется:",
+                    "answers": [
+                        {
+                            "text": "Специальный редактор модулей",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Редактор текстов и модулей",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Выбор редактора зависит от типа значения основного реквизита формы",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Верны ответы 1 и 2",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Как можно настроить выделение цветом синтаксических конструкций?",
+                    "answers": [
+                        {
+                            "text": "Выделение цветом синтаксических конструкций установлено по умолчанию и изменению не подлежит",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "\"Сервис\" - \"Параметры\" закладка \"Редактирование\" на странице \"Тексты модулей\", группа параметров \"Выделение цветом синтаксических конструкций\"",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "В 1С:Предприятии 8 не реализована возможность выделения цветом синтаксических конструкций",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Для чего в меню конфигуратора \"Текст\" введен признак \"Встроенный язык\"?",
+                    "answers": [
+                        {
+                            "text": "Для включения режима выделения цветом синтаксических конструкций в тексте модуля",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Для включения режима выделения цветом синтаксических конструкций в тексте модуля и в текстовом документе",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Для выполнения синтаксического контроля кода, написанного на встроенном языке системы",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 3",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 2 и 3",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "testData/2-9_img.png",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "В каких случаях можно выполнять синтаксический контроль модуля?",
+                    "answers": [
+                        {
+                            "text": "В любой момент редактирования модуля, выбрав команду контекстного меню \"Синтаксический контроль\"",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "При закрытии модуля",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "При сохранении всей конфигурацииc",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "В любой момент редактирования модуля, выбрав команду контекстного меню \"Синтаксический контроль\", а также (при включенном режиме автоматического выполнения синтаксического контроля модуля) при закрытии текста модуля или сохранении всей конфигурации",
+                            "isCorrect": true
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Для чего в 1С:Предприятия 8 реализовано выделение цветом синтаксических конструкций?",
+                    "answers": [
+                        {
+                            "text": "Для правильной работы синтаксического контроля модуля",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Для удобства редактирования текстов модулей",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Верно все вышеперечисленное",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Для чего используется синтаксический контроль?",
+                    "answers": [
+                        {
+                            "text": "Для проверки выделенного фрагмента модуля на правильность использования синтаксических конструкций встроенного языка",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Для проверки программных модулей на правильность использования синтаксических конструкций встроенного языка",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Для проверки отсутствия логических ошибок",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 2 и 3",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Верны все варианты",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Что используется для создания и редактирования текстовых документов?",
+                    "answers": [
+                        {
+                            "text": "HTML - редактор",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Редактор текстов и модулей",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "HTML – редактор или редактор текстов",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Табличный редактор",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Как можно просмотреть текст свернутой группировки?",
+                    "answers": [
+                        {
+                            "text": "Нажав на маркер \"+\" в начале строки группировки",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Для просмотра в виде подсказки – подведя курсор к специальному маркеру",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Только отключив сворачивание группировок",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": true
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Какие режимы форматирования текстов модулей реализованы в \"1С:Предприятия 8\"?",
+                    "answers": [
+                        {
+                            "text": "Автоматическое форматирование текста при его вводе",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Автоматическое форматирование уже введенного текста",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Форматирование выполняется исключительно в ручном режиме",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": true
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "В тексте модуля группировке могут подлежать:",
+                    "answers": [
+                        {
+                            "text": "определенные конструкции встроенного языка (условия, циклы и т.п.)",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "произвольные строки кода, группируемые области могут пересекаться",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "произвольные строки кода, группируемые области могут быть вложенными",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 3",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Верны все варианты",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Выделяются ли цветом свойства и методы глобального контекста при редактировании программных модулей?",
+                    "answers": [
+                        {
+                            "text": "Да",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Если на закладке \"Редактирование\" в параметрах редактирования текстов и модулей установить признак \"Выделять цветом свойства и методы глобального контекста\"",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Нет, так как свойства и методы глобального контекста не являются конструкциями встроенного языка",
+                            "isCorrect": true
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Будут ли выделяться цветом ключевые слова \"Процедура…КонецПроцедуры\" при редактировании программных модулей?",
+                    "answers": [
+                        {
+                            "text": "Всегда",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Зависит от настроек параметров",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Нет",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Для чего используется автоматическое форматирование текстов модулей?",
+                    "answers": [
+                        {
+                            "text": "Для смещения вправо уже введенного текста, расположенного внутри управляющих cконструкций, за счет добавления в начало строк необходимого количества знаков табуляции",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Для сдвига блока текста вправо или влево (в зависимости от настроек форматирования)",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Какие синтаксические конструкции могут группировать автоматически?",
+                    "answers": [
+                        {
+                            "text": "Процедуры и функции",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Комментарии к процедурам и функциям",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Циклы и условия",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 3",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Верны все варианты",
+                            "isCorrect": true
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Какие существуют операции для ручного форматирования выделенных блоков текста модуля?",
+                    "answers": [
+                        {
+                            "text": "Форматировать, Увеличить/Уменьшить отступ",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Добавить/Удалить комментарий",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Добавить/Удалить перенос строк",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Варианты 1 и 3",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2 и 3",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Какие существуют способы поиска нужной функции в текущем модуле?",
+                    "answers": [
+                        {
+                            "text": "Через пункт меню \"Правка - Найти\"",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Через пункт меню \"Правка – Глобальный поиск\"",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Использование режима поиска процедур и функций",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 2",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Варианты 1 и 3",
+                            "isCorrect": true
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                },
+                {
+                    "title": "Что произойдет, если установить курсор на имени функции в теле модуля и выполнить команду контекстного меню \"Перейти к определению\" (F12)?",
+                    "answers": [
+                        {
+                            "text": "Ничего не произойдет, так как курсор установлен на определении функции",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Откроется текст функции (раскроется группировка)",
+                            "isCorrect": true
+                        },
+                        {
+                            "text": "Нет верного ответа",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "testData/2-23_img.png",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                }
+            ]
         }
     ]
 }
-
+// stoped at 2.23
 const TestO = {
     data() {
         return {
             page: 0,
+            selectedChapters: [],
             timer: new Date(),
             title: 'TestPage',
             lInput: '',
             chapterIndx: 0,
             questionIndx: 0,
-            testData: TestDataSrc,
+            testData: undefined,
             msg: '',
             qIsFirst: true,
             qIsLast: false,
@@ -2306,10 +2953,16 @@ const TestO = {
             allowCheck: true,
             correctAnswers: [],
             answerElents: [],
-            chaptersData: getChapters(this),
-            Answers: initAnswers(this),
-            hasTip: false
+            chaptersData: [],
+            Answers: [],
+            hasTip: false,
         }
+    },
+    created() {
+        this.testData = TestDataSrc;
+        this.selectedChapters = [];
+        this.chaptersData = getChapters(this);
+        this.Answers = initAnswers(this);
     },
     methods: {
         lChangeQuestion (direction) {
@@ -2353,20 +3006,11 @@ const TestO = {
             this.msg = '';
             showResult(this);
             resetPage(this, true);
-        },
-        getJsonData() {
-            let responseData;
-            fetch('./testing.json', { method: 'GET', mode: 'no-cors' }).then(
-                response => { responseData = response.json() } ).catch(
-                    error => console.error('Error:', error)).then(
-                        data => {
-                            console.log(data);
-                        });
-                        
-            return responseData;
+            this.chaptersData = getChapters(this);
+            this.Answers = initAnswers(this);
         },
         checkTip()  {
-            let comment = this.testData.chapters[this.chapterIndx].questions[this.questionIndx].comment;
+            let comment = this.chaptersData[this.chapterIndx].questions[this.questionIndx].comment;
             if (comment.text !== '' || comment.img !== '') {
                 this.hasTip = true;
             } else
@@ -2382,6 +3026,32 @@ const TestO = {
                     break;
                 }
             } 
+        },
+        chooseChapter(indexC) {
+           let el = document.getElementById(`chapterSelection-item-${indexC}`); 
+           if (el === null) {
+               return;
+           }
+           if (el.checked && !this.selectedChapters.includes(indexC)) {
+               this.selectedChapters.push(indexC);
+           } else if (!el.checked && this.selectedChapters.includes(indexC)) {
+              let tmp = [];
+              for (i = 0; i < this.selectedChapters.length; i++) {
+                  if (this.selectedChapters[i] !== indexC) {
+                      tmp.push(this.selectedChapters[i]);
+                  }
+              }
+              this.selectedChapters = tmp;
+           }
+           
+        },
+        startTest() {
+            if (this.selectedChapters.length > 0) {
+                this.chaptersData = getChapters(this);
+                this.Answers = initAnswers(this);
+
+            }
+            this.titleScreen = false;
         }
 
     }
@@ -2390,10 +3060,10 @@ const app = Vue.createApp(TestO).mount('#app');
 
 function initAnswers(pageO) {
     let answersL = [];
-    chaptersQ = pageO.testData.chapters.length;
+    chaptersQ = pageO.chaptersData.length;
     for (i = 0; i < chaptersQ; i++) {
         answersL.push([]);
-        questionsQ = pageO.testData.chapters[i].questions.length;
+        questionsQ = pageO.chaptersData[i].questions.length;
         for (j = 0; j < questionsQ; j++) {
             answersL[i].push([]);
         }
@@ -2409,7 +3079,7 @@ function changeQuestion(pageO, direction) {
             pageO.questionIndx -= 1;
         } else if (pageO.questionIndx === 0) {
             pageO.chapterIndx -= 1;
-            pageO.questionIndx = testData.chapters[pageO.chapterIndx].questions.length - 1;
+            pageO.questionIndx = pageO.chaptersData[pageO.chapterIndx].questions.length - 1;
         }
     } else if (direction === 1) {
         if (pageO.questionIndx < questionsQ - 1) {
@@ -2419,8 +3089,8 @@ function changeQuestion(pageO, direction) {
             pageO.questionIndx = 0;
         }
     }
-    chaptersQ = pageO.testData.chapters.length;
-    questionsQ = pageO.testData.chapters[pageO.chapterIndx].questions.length;
+    chaptersQ = pageO.chaptersData.length;
+    questionsQ = pageO.chaptersData[pageO.chapterIndx].questions.length;
     
     pageO.qIsFirst = (pageO.chapterIndx === 0 && pageO.questionIndx === 0);
     pageO.qIsLast = (pageO.chapterIndx === chaptersQ - 1 && pageO.questionIndx === questionsQ - 1);
@@ -2430,6 +3100,7 @@ function resetPage(pageO, resetAnswers = false) {
     pageO.chapterIndx = 0; pageO.questionIndx = 0;
     pageO.qIsFirst = true; pageO.qIsLast = false;
     pageO.Answers = initAnswers(pageO);
+    pageO.selectedChapters = [];
     if (resetAnswers === false) {
         pageO.msg = '';
     } else {
@@ -2441,21 +3112,17 @@ function resetPage(pageO, resetAnswers = false) {
 
 function getChapters(pageO) {
     pageO.testData = TestDataSrc;
-    return pageO.testData.chapters;
+    if (pageO.selectedChapters.length === 0) {
+        return pageO.testData.chapters;
+    } else {
+        let chaptersL = [];
+        pageO.selectedChapters.sort();
+        for (i = 0; i < pageO.selectedChapters.length; i++) {
+            chaptersL.push(pageO.testData.chapters[pageO.selectedChapters[i]]);
+        }
+        return chaptersL;
+    }
 }
-
-function getJsonData() {
-    let responseData;
-    fetch('./tmpjson.json').then(
-        response => { responseData = response.json() } ).catch(
-            error => console.error('Error:', error)).then(
-                data => {
-                    console.log(data);
-                });
-                
-    return responseData;
-}
-
 function processAnswer(pageO, indexC, indexQ, indexA, answer, checked) {
     
     let multy = pageO.chaptersData[indexC].questions[indexQ].multiple;
@@ -2516,17 +3183,17 @@ function checkAnswerInternal(chaptersData, answers, chapterIndx, questionIndx, c
 }
 
 function showResult(pageO) {
-    let chaptersQ = pageO.testData.chapters.length;
+    let chaptersQ = pageO.chaptersData.length;
     let totalQ = 0;
     let rightAnswers = 0;
     
     for (let i = 0; i < chaptersQ; i++) {
-        let questionQ = pageO.testData.chapters[i].questions.length;
+        let questionQ = pageO.chaptersData[i].questions.length;
         
         for (let j = 0; j < questionQ; j++) {
             let answer = pageO.Answers[i][j];
             let correctAnswers = [];
-            rightAnswers += checkAnswerInternal(pageO.testData.chapters, answer, i, j, correctAnswers) ? 1 : 0;
+            rightAnswers += checkAnswerInternal(pageO.chaptersData, answer, i, j, correctAnswers) ? 1 : 0;
             totalQ += 1;
         }
     }
