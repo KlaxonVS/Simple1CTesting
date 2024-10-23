@@ -2948,6 +2948,7 @@ const TestDataSrc = {
                         "isCorrect":false
                       }
                     ],
+                    "multiple": false,
                     "img":"testData/2-24_img.png",
                     "comment":{
                       "text":"",
@@ -2970,6 +2971,7 @@ const TestDataSrc = {
                       "isCorrect":true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -2996,6 +2998,7 @@ const TestDataSrc = {
                       "isCorrect":true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3018,6 +3021,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3040,6 +3044,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"testData/2-28_img.png",
                   "comment":{
                     "text":"",
@@ -3050,18 +3055,19 @@ const TestDataSrc = {
                   "title":"Для чего предназначено форматирование в модуле?",
                   "answers":[
                     {
-                      "text":"1. Для удобства просмотра и редактирования модуля",
+                      "text":"Для удобства просмотра и редактирования модуля",
                       "isCorrect":false
                     },
                     {
-                      "text":"2. Для выделения лидирующими пробелами (табуляцией) управляющих конструкций встроенного языка системы 1С",
+                      "text":"Для выделения лидирующими пробелами (табуляцией) управляющих конструкций встроенного языка системы 1С",
                       "isCorrect":false
                     },
                     {
-                      "text":"3. Верно первое и второе",
+                      "text":"Верно первое и второе",
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3088,6 +3094,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3110,6 +3117,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3140,6 +3148,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3170,6 +3179,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3204,6 +3214,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3234,6 +3245,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3260,6 +3272,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3282,6 +3295,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3304,6 +3318,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3330,6 +3345,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3352,6 +3368,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3382,6 +3399,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3412,6 +3430,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3434,6 +3453,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3456,6 +3476,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3486,6 +3507,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3512,6 +3534,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3542,6 +3565,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3572,6 +3596,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3594,6 +3619,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3624,6 +3650,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3650,6 +3677,7 @@ const TestDataSrc = {
                       "isCorrect": false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3676,6 +3704,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3706,6 +3735,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3728,6 +3758,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3754,6 +3785,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3784,6 +3816,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3806,6 +3839,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3828,6 +3862,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3858,6 +3893,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3888,6 +3924,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3918,6 +3955,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3940,6 +3978,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -3970,6 +4009,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -4000,6 +4040,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -4030,6 +4071,7 @@ const TestDataSrc = {
                       "isCorrect": true
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -4060,6 +4102,7 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
@@ -4090,12 +4133,2036 @@ const TestDataSrc = {
                       "isCorrect":false
                     }
                   ],
+                  "multiple": false,
                   "img":"",
                   "comment":{
                     "text":"",
                     "img":""
                   }
                 }
+            ]
+        },
+        {
+            "title": "Редакторы и инструменты режима разработки",
+            "questions": [
+                {
+                    "title":"Можно ли в режиме глобального поиска искать во внешних файлах?",
+                    "answers":[
+                      {
+                        "text":"Режим глобального поиска не позволяет искать во внешних файлах",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Режим глобального поиска позволяет искать во внешних файлах типа *.txt, *.mxl, *.cf, *.epf, *.grs, *.geo",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Режим глобального поиска позволяет искать во внешних файлах типа *.epf",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Режим глобального поиска позволяет искать:",
+                    "answers":[
+                      {
+                        "text":"Во всех объектах основной конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Во всех объектах конфигурации базы данных",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"По произвольному набору объектов (в том числе и по всем) как основной, так и конфигурации базы данных",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В конфигурацию были внесены изменения. При закрытии конфигурации:",
+                    "answers":[
+                      {
+                        "text":"данные изменения сразу же исчезают",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"данные изменения сразу же принимаются",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"данные изменения будут приняты или исчезнут в зависимости от ответа на вопрос системы",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"данные изменения будут приняты или исчезнут в зависимости от ответа вопрос системы, причем, если пользовательские сеансы не закрыты - система выдаст об этом предупреждение",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В каком режиме может быть вызвано окно Синтаксис-помощника?",
+                    "answers":[
+                      {
+                        "text":"Автоматически при открытии 1С:Предприятие в режиме Конфигуратор",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Автоматически при открытии 1С:Предприятие в режиме Предприятие",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В режиме Конфигуратор",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Недоступно в режиме Конфигуратор",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 3",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В окне \"Конфигурация\" сортировка объектов конфигурации возможна:",
+                    "answers":[
+                      {
+                        "text":"только по имени",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"только по имени или синониму",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"только по имени, или синониму, или комментарию",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"только по имени, или синониму, комментарию или подсистемам",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В окне \"Конфигурация\" при однократном нажатии кнопки \"Упорядочить список\" сортировка возможна:",
+                    "answers":[
+                      {
+                        "text":"для всех метаданных в целом",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"для всех прикладных объектов в пределах раздела метаданных, например, Справочников",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"для однотипных объектов метаданных, подчиненных одному объекту метаданных",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"только для реквизитов объектов",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 2 и 3",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"При выполнении операции \"Поиск ссылок на объект\" в ситуации, отображенной на картинке:",
+                    "answers":[
+                      {
+                        "text":"будет найден справочник \"Номенклатура\", поскольку тип значения реквизита \"СправочникСсылка.Номенклатура\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"будут найдены все документы, где реквизиты имеют такой же тип значения (\"СправочникСсылка.Номенклатура\")",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"будут найдены все документы, где в табличной части \"Состав\" есть реквизит \"Номенклатура\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"будут найдены все объекты, в составе которых есть объект с именем \"Номенклатура\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"будут найдены все объекты, в составе которых использован реквизит \"Номенклатура\" табличной части \"Состав\" документа \"ЗаказКлиента\"",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"testData/3-7_img.png",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"При закрытии окна \"Конфигурация\":",
+                    "answers":[
+                      {
+                        "text":"система сразу же завершит работу с отдельными составляющими конфигурации, открытыми для редактирования",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"система попытается завершить работу с отдельными составляющими конфигурации, открытыми для редактирования. Если обнаружит изменения по отношению к конфигурации базы данных - система выдаст запрос на сохранение изменений",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"не отразится на окнах, открытых для редактирования",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"система не даст выполнить закрытие, пока открыто окно редактирования хотя бы одного объекта конфигурации",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В окне \"Конфигурация\" отбор объектов конфигурации возможно сделать:",
+                    "answers":[
+                      {
+                        "text":"только по имени",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"только по имени или синониму",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"по имени, или синониму, или комментарию",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"по подсистемам",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Варианты 3 и 4",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Для удаления объекта метаданных из состава конфигурации...",
+                    "answers":[
+                      {
+                        "text":"Объект необходимо пометить на удаление, впоследствии посредством специальной обработки \"удаление помеченных объектов\" он может быть удален, если не нарушает правила ссылочной целостности",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Объект необходимо пометить на удаление, впоследствии посредством специальной обработки \"удаление помеченных объектов\" он может быть удален, даже если нарушает правила ссылочной целостности",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Объект удаляется сразу же, без всякого контроля ссылочной целостности",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Объект удаляется сразу же, или не удаляется - если это нарушает правила ссылочной целостности",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"При выполнении операции \"Поиск ссылок в объекте\" в ситуации, отображенной на картинке:",
+                    "answers":[
+                      {
+                        "text":"будут найдены все объекты, имеющие в своем составе табличную часть \"Товары\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"ничего не произойдет, поскольку табличная часть документа не относится к ссылочным типам данных",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"будут найдены все объекты, на данные которых ссылаются реквизиты табличной части",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"будут выданы все типы значений реквизитов табличной части",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"testData/3-11_img.png",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В окне \"Конфигурация\" копирование объекта перетаскиванием:",
+                    "answers":[
+                      {
+                        "text":"невозможно",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"возможно только в пределах \"своей\" ветки объектов",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"возможно и в пределах \"своей\" ветки, и за ее пределами. При этом в отношении структуры будут скопированы только те свойства (реквизиты), которые поддерживаются классом результирующего объекта",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"возможно и в пределах \"своей\" ветки, и за ее пределами. При этом в отношении структуры будут скопированы все свойства исходного объекта",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В каком случае в окне конфигурации доступно действия изменения конфигурации?",
+                    "answers":[
+                      {
+                        "text":"Всегда",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Только для основной конфигурации",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Для основной конфигурации и конфигурации базы данных",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Для конфигурации поставщика",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Для конфигурации открытой из файла",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Для отключения отбора в окне конфигурации необходимо:",
+                    "answers":[
+                      {
+                        "text":"выбрать в меню \"Действия\" команду \"Отключить отбор по подсистемам\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"выбрать в командной панели команду \"Отключить отбор по подсистемам\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"открыть настройку отбора по подсистемам и нажать кнопку \"Отмена\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"открыть настройку отбора по подсистемам и нажать кнопку \"Отключить\"",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Для редактирования основных свойств объектов конфигурации (справочники, документы, журналы документов и ряд других), управления составом подчиненных объектов и настройки взаимодействия объектов друг с другом:",
+                    "answers":[
+                      {
+                        "text":"Предназначено окно \"Конфигурация\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Предназначено окно редактирования объекта конфигурации",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Предназначено окно \"Палитра свойств\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Предназначено окно \"Дополнительно\"",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В окне редактирования объекта конфигурации - справочник \"Контрагенты\" на закладке \"Поле ввода\" свойство \"Ввод по строке\" может быть заполнено:",
+                    "answers":[
+                      {
+                        "text":"только кодом и наименованием справочника",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"кодом, наименованием, или другими строковыми или числовыми реквизитами, у которых свойство \"Индексировать\" имеет значение \"Индексирование\" или \"Индексирование с доп. упорядочиванием\"",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"кодом, наименованием, или другими реквизитами, у которых свойство \"Индексировать\" имеет значение \"Индексирование\" или \"Индексирование с доп. упорядочивание\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"любыми реквизитами, с любым типом и значением индексирования",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Свойство \"Быстрый выбор\" может быть установлено:",
+                    "answers":[
+                      {
+                        "text":"для объекта конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"для реквизита объекта конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"для поля ввода",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 2 и 3",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Для каких объектов конфигурации есть возможность отмечать свойство \"Быстрый выбор\"?",
+                    "answers":[
+                      {
+                        "text":"Для справочников",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Для документов",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Для планов видов характеристик",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 3",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Редактирование свойств в окне редактирования объекта конфигурации...",
+                    "answers":[
+                      {
+                        "text":"Должно производиться последовательно, с переходами по разделам посредством кнопки \"Далее\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Проводится в произвольном порядке",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Рекомендуется проводить в последовательности следования разделов, поскольку часть свойств разделов, расположенных ниже, определяются свойствами, расположеннымвыше. Но, в принципе, - может редактироваться в произвольной последовательности",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Не производится, поскольку окно имеет вспомогательные функции",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"При достижении последней закладки в окне редактирования объекта конфигурации:",
+                    "answers":[
+                      {
+                        "text":"Нажатие на кнопку \"Далее\" активирует первую закладку",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Нажатие на кнопку \"Далее\" активирует сообщение \"Последняя страница\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Нажатие на кнопку \"Далее\" предложит перейти на первую страницу",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Кнопка \"Далее\" станет не активной и не доступной",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"При нажатии на кнопку \"Далее\" в окне редактирования объекта на закладке, предшествующей не активной закладке, действие системы будет следующим:",
+                    "answers":[
+                      {
+                        "text":"Система активирует неактивную закладку и покажет содержимое",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Система перейдет на закладку, следующую за неактивной закладкой",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Кнопка \"Далее\" станет не активной и не доступной",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Редактировать состав реквизитов справочника можно:",
+                    "answers":[
+                      {
+                        "text":"В дереве метаданных",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В окне редактирования объекта конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Варианты 1 и 2, и кроме того - можно программно",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"3.23 Если в окне редактирования объекта конфигурации нет закладки \"Иерархия\" - это признак того, что",
+                    "answers":[
+                      {
+                        "text":"Объект не имеет иерархии",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Настройка иерархии определяется в палитре свойств",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Объект имеет иерархию, но нет возможности ее настройки",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны варианты 1 и 3",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Верны варианты все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Определить в конфигураторе использование иерархического представления данных для настраиваемого объекта можно...",
+                    "answers":[
+                      {
+                        "text":"По наличию закладки \"иерархия\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"По активности и наличию стандартного реквизита \"Родитель\"",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"По активности и наличию реквизита объекта \"Родитель\" в списке реквизитов",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны варианты 1 и 2",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны варианты 1 и 3",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Добавление реквизита через кнопку \"Действие\" в окне редактирования объекта приведет к следующим действиям системы:",
+                    "answers":[
+                      {
+                        "text":"Будет открыта палитра свойств для редактирования реквизита",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Будет открыто окно конфигурации и курсор активируется на создаваемом реквизите",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Будет активирована закладка \"Данные\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны варианты 1 и 2",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Список стандартных реквизитов позволяет:",
+                    "answers":[
+                      {
+                        "text":"Отключать использование стандартных реквизитов",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Включать использование стандартных реквизитов",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Производить настройку типа значения стандартного реквизита",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Определять представление стандартного реквизита",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Варианты 3 и 4",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Если в окне редактирования объекта конфигурации нет закладки \"Интерфейсы\"?",
+                    "answers":[
+                      {
+                        "text":"В конфигурации не определено значение свойства \"Основной интерфейс\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В конфигурации установлено значение \"Управляемое приложение\" в свойстве \"Основной режим запуска\"",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"В конфигураторе включен режим редактирования \"Управляемое приложение и обычное приложение\"",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"На закладке формы, окна редактирования объекта конфигурации, есть закладка \"Дополнительные\" потому, что:",
+                    "answers":[
+                      {
+                        "text":"В конфигурации включено свойство \"использовать дополнительные свойства\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В конфигурации включены свойства: \"Использовать управляемые формы в толстом клиенте в обычном режиме\" и \"Использовать обычные формы в толстом клиенте управляемом режиме",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В конфигурации установлено значение \"Обычное приложение\" в свойстве \"Основной режим запуска\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В конфигураторе включен режим редактирования \"Управляемое приложение и обычное приложение\"",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"testData/3-28_img.png",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Окно редактирования объекта конфигурации может открыться:",
+                    "answers":[
+                      {
+                        "text":"при выборе объекта конфигурации в дереве метаданных",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"при создании нового объекта конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"при установке курсора на объект конфигурации в дереве метаданных",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Варианты 1 и 3",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Окно редактирования объекта конфигурации закрывается:",
+                    "answers":[
+                      {
+                        "text":"При нажатии на кнопку формы \"Закрыть\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"При нажатии на кнопку закрытия окна",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"При попытке удаления объекта конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны варианты 1 и 2",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Окно \"Дополнительно\" в конфигураторе предназначено для …",
+                    "answers":[
+                      {
+                        "text":"Расширенной настройки свойств объекта",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Настройки тех свойств объекта, которые не отображаются в палитре свойств",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Быстрой настройки механизмов и объектов, связанных с рассматриваемым объектом",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Настройки тех свойств объекта, которые не отображаются в окне редактирования объекта конфигураци",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Для активности кнопки \"Конструктор ввода на основании\" в окне редактирования объекта конфигурации ...",
+                    "answers":[
+                      {
+                        "text":"Обязательно заполнение поля \"Вводится на основании\"",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Обязательно заполнение поля \"Является основанием для\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Обязательно заполнение полей \"Является основанием для\" и \"Вводится на основании\"",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Окно \"Дополнительно\" (открываемое одноименной командой из контекстного меню объекта конфигурации) в конфигураторе можно отобразить:",
+                    "answers":[
+                      {
+                        "text":"По закладкам",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Списком с группировкой по категориям",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Списком с отсортированными по алфавиту свойствами",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Окно \"Дополнительно\" (для объекта конфигурации) в конфигураторе можно открыть:",
+                    "answers":[
+                      {
+                        "text":"1. отдельно для каждого объекта конфигурации, как окно редактирования объект",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"2. только одно общее для всех объектов конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"3. отдельно для каждого окна редактирования объекта конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"только одно для текущего объекта в дереве метаданных",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Как узнать, какие команды объекта конфигурации задействованы в командных интерфейсах?",
+                    "answers":[
+                      {
+                        "text":"В окне редактирования объекта конфигурации на закладке \"Команды\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В окне \"Дополнительно\" на закладке \"Командный интерфейс\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В ветке метаданных \"Интерфейсы\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Окно \"Дополнительно\" в конфигураторе можно вызвать:",
+                    "answers":[
+                      {
+                        "text":"из окна палитры свойств объекта конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"из контекстного меню выполнением команды \"Дополнительно\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"по кнопке \"Действия \" в окне редактирования объекта конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Для коллекции картинок можно задать:",
+                    "answers":[
+                      {
+                        "text":"список картинок, входящих в коллекцию",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"размеры картинок в коллекции и количество картинок",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"размеры картинок в коллекции и общий размер картинки-коллекции",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В режиме редактирования коллекции картинок:",
+                    "answers":[
+                      {
+                        "text":"допускается редактировать только выбранную картинку коллекции",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"можно редактировать как отдельную картинку коллекции, так и всю коллекцию целиком",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"коллекция всегда редактируется как одна большая картинка",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Изменить размер картинки в окне редактора картинок:",
+                    "answers":[
+                      {
+                        "text":"нельзя",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"можно, вызвав пункт меню \"Действия-Параметры картинки...\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"можно, используя указатель мыши и границу выделенной картинки в левом поле окна редактора",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"можно, используя указатель мыши и границу выделенной картинки в правом поле окна редактора",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 2 и 3",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 2 и 3 и 4",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Чтобы создать новую картинку:",
+                    "answers":[
+                      {
+                        "text":"нужно вызвать стандартный редактор операционной системы, т.к. в \"1С:Предприятии 8\" отсутствует редактор картинок",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"в ветви \"Общие картинки\" дерева конфигурации выбрать действие \"Добавить\", после чего открыть созданную пустую картинку на редактирование",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"в пункте главного меню \"Файл\" выбрать действие \"Новый\" и указать тип файла \"Картинка\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"4. Варианты 2 и 3",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Для чего используется редактор командного интерфейса конфигурации?",
+                    "answers":[
+                      {
+                        "text":"Для настройки закладок в панели разделов",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Для настройки отображаемых навигационных команд",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Для настройки командных панелей формы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Почему стандартные команды по работе с объектами могут не показываться в редакторе командного интерфейса подсистем?",
+                    "answers":[
+                      {
+                        "text":"Объект конфигурации не включен в состав подсистемы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"У объекта конфигурации отключено использование стандартных команд",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Для объекта конфигурации не определены команды объекта",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Какой порядок следования закладок в панели разделов может использоваться?",
+                    "answers":[
+                      {
+                        "text":"Автоматический",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Ручной порядок",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Порядок с сортировкой",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Как определяется порядок следования закладок в панели разделов?",
+                    "answers":[
+                      {
+                        "text":"Порядок закладок соответствует порядку следования подсистем в дереве метаданных",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Порядок следования разделов определяется в редакторе командного интерфейса конфигурации",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Порядок следования закладок всегда определяется сортировкой по алфавиту",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Порядок следования закладок задается в окне настроек \"Все подсистемы\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 2 и 4",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Как изменять состав списка доступных команд в редакторе командного интерфейса?",
+                    "answers":[
+                      {
+                        "text":"Удаление команды осуществляется действием \"Удалить команду\" в поле \"Доступные команды\" или клавишей \"Del\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Добавление команды осуществляется действием \"Добавить команду\" в поле \"Доступные команды\" или клавишей \"Inser\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Набор доступных команд определяется настройкой объекта конфигурации и настройкой команды",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Какие действия допустимы в редакторе командного интерфейса основного раздела?",
+                    "answers":[
+                      {
+                        "text":"Добавление и удаление команды",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Добавление, удаление и перемещение команды",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Добавление, удаление, перемещение команды и настройка видимости",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Добавление, удаление, перемещение команды, отбор команд и настройка видимости команды по ролям",
+                        "isCorrect":true
+                      },
+                      {
+                        "text":"Добавление, удаление, перемещение команды, отбор команд и настройка видимости команды, нахождение объекта команды в дереве метаданных",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Добавление, удаление, перемещение команды, отбор команд и настройка видимости команды, добавление и удаление групп команд, нахождение объекта команды в дереве метаданных",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Где отображается список доступных команд?",
+                    "answers":[
+                      {
+                        "text":"В редакторе командного интерфейса конфигурации",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В редакторе командного интерфейса основного раздела",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В редакторе командного интерфейса",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Что определяет серый флажок в видимости команды по ролям?",
+                    "answers":[
+                      {
+                        "text":"Видимость определяется программно",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Видимость зависит от сочетания ролей",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Видимость определяется общей настройкой",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect": false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Режим \"Скрыть невидимые по умолчанию\" скрывает:",
+                    "answers":[
+                      {
+                        "text":"команды, для которых отключена только видимость по ролям",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"команды, для которых отключена общая видимость и видимость по ролям",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"группы, в которых нет команд",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 2 и 3",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В каком случае недоступно перемещение команды в редакторе командного интерфейса?",
+                    "answers":[
+                      {
+                        "text":"В случае использования автоматического порядка команд",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В случае использования ручного порядка команд",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В случае использования отбора команд по ролям",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В случае использования режима \"Скрыть по умолчанию\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 4",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 3 и 4",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Редактор обычных форм содержит закладки:",
+                    "answers":[
+                      {
+                        "text":"Диалог, Модуль, Реквизиты",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Форма, Модуль формы, Реквизиты",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Диалог, Модуль, Реквизиты, Команды формы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Форма, Модуль, Команды формы, Параметры",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Диалог, Модуль, Реквизиты, Элементы, Параметры, Команды, Командный интерфейс",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Какие способы доступны в конфигураторе для редактирования диалога обычной формы?",
+                    "answers":[
+                      {
+                        "text":"Через диалог вставки элементов управления",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Через диалог размещения данных",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Вставка элемента управления из панели инструментов",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 3",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"На что влияет флажок \"Использовать при вставке\" в диалоге вставки элемента управления?",
+                    "answers":[
+                      {
+                        "text":"Редактор формы будет всегда использовать диалог вставки элемента управления при добавлении элемента управления на форму",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Редактор формы будет использовать диалог вставки элемента управления при добавлении данного типа элемента управления на форму",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Редактор формы будет использовать диалог вставки элемента управления только в следующий раз при добавлении любого элемента управления на форму",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Редактор формы будет использовать диалог вставки элемента управления только следующий раз при добавлении данного типа элемента управления на форму",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Настройки редактора обычных форм определяются ...",
+                    "answers":[
+                      {
+                        "text":"Для всех форм в настройках параметров конфигуратора",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Только в настройках самой формы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Общие в настройках конфигуратора и индивидуальные в настройке формы",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Платформой без возможности их изменений",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"При добавлении элемента управления на произвольную обычную форму без реквизитов:",
+                    "answers":[
+                      {
+                        "text":"редактор форм сам создаст реквизит и при удалении элемента с формы удалит реквизит формы",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"редактор форм сам создаст реквизит и при удалении элемента с формы оставит реквизит формы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"редактор форм предложит сначала создать реквизит, а потом позволит поместить элемент управления на форме",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Поведение зависит от настройки редактора форм",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Какие настройки можно определить у реквизита обычной формы:",
+                    "answers":[
+                      {
+                        "text":"\"Имя\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"\"Тип\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"\"Проверка заполнения\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны варианты 1 и 2",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"При удалении реквизита обычной формы:",
+                    "answers":[
+                      {
+                        "text":"Редактор удалит связанный с реквизитом элемент управления",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Редактор удалит связанный с реквизитом элемент управления, но только если реквизит был создан редактором при добавлении элемента управления",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Элемент управления останется, но будет нарушена логическая целостность структуры",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Элемент управления останется, и связь с данными будет очищена",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Редактор не позволит удалить реквизит, если он связан с элементом управления",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Какие действия возможны в редакторе обычной формы?",
+                    "answers":[
+                      {
+                        "text":"Набор действий определяется пунктом меню \"Правка\" в главном меню конфигуратора",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Набор действий определяется пунктом меню \"Форма\" в главном меню конфигуратора",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Набор действий определяется пунктом меню \"Редактор форм\" в главном меню конфигуратор",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Набор действий определяется контекстным меню на закладке \"Диалог\" редактора формы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 2 и 4",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"В редакторе обычных форм диалог создается:",
+                    "answers":[
+                      {
+                        "text":"определением структуры размещения элементов",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"размещением элементов управления в диалоге формы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"рисованием с использованием встроенного редактора картинок",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 2",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Редактор обычных форм может использоваться:",
+                    "answers":[
+                      {
+                        "text":"В любом режиме работы конфигуратора",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"При установленном режиме совместимости интерфейса \"Интерфейс 8.2\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Только в режиме работы конфигуратора \"Управляемое приложение и обычное приложение\"",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Только при установке значения свойства конфигурации \"Основной режим запуска\" -- Обычное приложение",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Редактор управляемых форм содержит закладки…",
+                    "answers":[
+                      {
+                        "text":"Диалог, Модуль, Реквизиты",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Форма, Модуль формы, Реквизиты",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Диалог, Модуль, Реквизиты, Команды формы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Форма, Модуль, Элементы, Команды, Реквизиты, Параметры, Командный интерфейс",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Диалог, Модуль, Реквизиты, Элементы, Параметры, Команды формы, Командный интерфейс",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Настройки редактора управляемых форм определяются…",
+                    "answers":[
+                      {
+                        "text":"Для всех форм в настройках параметров конфигуратора",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Только в настройках самой формы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Общие в настройках конфигуратора и индивидуальные в настройке формы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Платформой без возможности их изменений",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Какие типы элементов можно добавить на форму в редакторе управляемых форм?",
+                    "answers":[
+                      {
+                        "text":"Поле, Кнопка, Таблица, Картинка, Группа, Декорация",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Поле, Кнопка, Таблица, Картинка, Диаграмма, Декорация",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Поле, Кнопка, Таблица, Картинка, Группа, Декорация, Диаграмма",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Поле, Кнопка, Таблица, Картинка, Группа, Декорация, Разделитель",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Как разместить в диалоге управляемой формы графические элементы, например, диаграмму?",
+                    "answers":[
+                      {
+                        "text":"Вызвать диалог вставки элементов управления и выбрать нужный элемент",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Добавить элемент \"Поле\" и определить у него тип \"Диаграмма\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Добавить элемент \"Поле\" и связать с реквизитом, у которого задан тип \"Диаграмма\"",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Использовать панель инструментов для размещения элементов заданного типа на форму",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Какой набор свойств соответствует реквизиту управляемой формы?",
+                    "answers":[
+                      {
+                        "text":"Имя, Тип",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Заголовок, Проверка заполнения",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Основной реквизит, Функциональные опции",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Просмотр, Редактирование",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Варианты 1 и 4",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Верны все варианты",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Почему элемент \"Полное наименование\" отсутствует в доступных полях при настройке формы в режиме исполнения, хотя в редакторе управляемоформы он есть?",
+                    "answers":[
+                      {
+                        "text":"Ограничена видимость элемента по ролям",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Ограничена видимость реквизита формы по ролям",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Ограничена видимость реквизита объекта по ролям",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"testData/3-66_img.png",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Серый цвет флажка в настройке видимости элемента по ролям на форме",
+                    "answers":[
+                      {
+                        "text":"Для элемента не доступно изменение видимости в режиме исполнения",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Видимость элемента определяется программно при создании формы",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Видимость по ролям наследуется из общей настройки видимости",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Как узнать в редакторе управляемых форм, что реквизит связан с каким-либо элементом формы?",
+                    "answers":[
+                      {
+                        "text":"Выбрать реквизит формы и выполнить поиск ссылок на объект",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Открыть палитру свойств реквизита и открыть свойство \"Просмотр\"",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Реквизиты, размещенные в форме, помечаются в редакторе реквизитов в колонке с пиктограммой в виде квадрат",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"Открыть палитру свойств реквизита и открыть свойство \"Редактирование",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Как осуществляется изменение размера элемента в диалоге управляемой формы",
+                    "answers":[
+                      {
+                        "text":"Средствами визуального редактирования диалога форм",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"С помощью определенных свойств элемента формы",
+                        "isCorrect": true
+                      },
+                      {
+                        "text":"С помощью макета размещения элементов на форме",
+                        "isCorrect":false
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  },
+                  {
+                    "title":"Как в диалоге управляемой формы разместить элементы по горизонтали?",
+                    "answers":[
+                      {
+                        "text":"Выбрать элементы и перетащить в нужное место на диалоге",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"В свойстве элемента задать расположение относительно предыдущего",
+                        "isCorrect":false
+                      },
+                      {
+                        "text":"Правила размещения могут быть заданы для всех элементов формы, либо на отдельные группы",
+                        "isCorrect": true
+                      }
+                    ],
+                    "multiple": false,
+                    "img":"",
+                    "comment":{
+                      "text":"",
+                      "img":""
+                    }
+                  }
             ]
         }
     ]
