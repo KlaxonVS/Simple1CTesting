@@ -19,13 +19,13 @@
 
 <body>
     <div class="header">
-        <h1>Тестирование "1C:Профессионал" онлайн с ответами бесплатно</h1>
+        <h2>Тестирование "1C:Профессионал" онлайн с ответами бесплатно</h1>
     </div>
     <div id="app" v-cloak>
         
         <div id="titleScreen" v-if="titleScreen === true">
         <div id="titleScreen-content">
-            <h1 id="titleScreen-title">Тестирование "1C:Профессионал"</h1>
+            <!-- <h2 id="titleScreen-title">Тестирование "1C:Профессионал"</h1> -->
             <div id="titleScreen-settings">
             <p class="listTitle">Настройки:</p>
             <ul class="list">
@@ -33,9 +33,6 @@
                 <li class="listItem">Включить проверку ответа: <input type="checkbox" v-model="allowCheck"></li>
             </ul>
             </div>
-            <button class="pageButton" v-on:click="startTest()">{{ msg !== '' ? 'Начать сначала' : 'Начать' }}</button>
-            <p v-if="msg !== ''">Результат: <p>{{ msg }}</p> </p>
-            <p class="postScriptum">*Вопросы в процессе обработки. 3 из 14 разделов доступны полностью. </p>
             <div class="chapterSelectionDiv">
                 <p class="listTitle-chapterSelection">Разделы: <span class="chapterSelection-subte">*Если не выбрано ни одного раздела, то будут использованы все разделы.</span></p>
                 <div class="chapterSelection">
@@ -47,6 +44,9 @@
                     </div>
                 </div>
             </div>
+            <p v-if="msg !== ''">Результат: <p>{{ msg }}</p> </p>
+            <button class="pageButton" v-on:click="startTest()">{{ msg !== '' ? 'Начать сначала' : 'Начать' }}</button>
+            <p class="postScriptum">*Вопросы в процессе обработки. 3 из 14 разделов доступны полностью. </p>
         </div>
         </div>
         <div v-else>
