@@ -178,7 +178,6 @@ function resetPage(pageO, resetAnswers = false) {
 }
 
 function getChapters(pageO) {
-		console.log(pageO.testData);
     if (pageO.selectedChapters.length === 0) {
         return pageO.testData.chapters;
     } else {
