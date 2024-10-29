@@ -58,7 +58,7 @@
                     <!-- Question -->
                     <div class="question" v-show="questionIndx === indexQ">
                         <p class="question-title">{{ question.title }}</p>
-                        <img class="question-img" v-if="question.img != ''" v-bind:src="'./' + question.img" alt="Отсутствует изображение: './testData/' + question.img">
+                        <img class="question-img" v-if="question.img != ''" v-bind:src="'./testData/' + question.img" alt="Отсутствует изображение: './testData/' + question.img">
                         <!-- Answers -->
                         <ol class="answers">
                             <div class="answer-template" v-for="(answer, indexA) in question.answers">
