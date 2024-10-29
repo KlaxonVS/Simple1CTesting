@@ -1,39 +1,59 @@
 {
     "chapters": [
         {
-            "title": "Общие механизмы, понятия и термины.",
+            "title": "Chapter1",
             "questions": [
                 {
-                    "title": "В какое значение можно установить свойство \"Серии кодов\" объекта конфигурации \"Справочник\"?",
+                    "title": "Question",
                     "answers": [
                         {
-                            "text": "Во всем справочнике",
+                            "text": "Answer",
                             "isCorrect": false
                         },
                         {
-                            "text": "В пределах подчинения",
+                            "text": "Answer",
                             "isCorrect": false
                         },
                         {
-                            "text": "В пределах подчинения владельцу",
+                            "text": "Answer",
                             "isCorrect": false
-                        },
-                        {
-                            "text": "Варианты 1 и 2",
-                            "isCorrect": false
-                        },
-                        {
-                            "text": "Верны все указанные ответы",
-                            "isCorrect": true
                         }
                     ],
                     "multiple": false,
-                    "img": null,
+                    "img": "",
                     "comment": {
                         "text": "",
                         "img": ""
                     }
                 },
+                {
+                    "title": "Question",
+                    "answers": [
+                        {
+                            "text": "Answer",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Answer",
+                            "isCorrect": false
+                        },
+                        {
+                            "text": "Answer",
+                            "isCorrect": false
+                        }
+                    ],
+                    "multiple": false,
+                    "img": "",
+                    "comment": {
+                        "text": "",
+                        "img": ""
+                    }
+                }
+            ]
+        },
+        {
+            "title": "Chapter2",
+            "questions": [
                 {
                     "title": "Question",
                     "answers": [

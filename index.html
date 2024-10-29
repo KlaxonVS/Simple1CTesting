@@ -58,7 +58,7 @@
                     <!-- Question -->
                     <div class="question" v-show="questionIndx === indexQ">
                         <p class="question-title">{{ question.title }}</p>
-                        <img class="question-img" v-if="question.img != ''" v-bind:src="'./' + question.img" alt="Отсутствует изображение: './' + question.img">
+                        <img class="question-img" v-if="question.img != ''" v-bind:src="'./' + question.img" alt="Отсутствует изображение: './testData/' + question.img">
                         <!-- Answers -->
                         <ol class="answers">
                             <div class="answer-template" v-for="(answer, indexA) in question.answers">
@@ -74,7 +74,7 @@
                             <button class="pageButton" v-show="allowTip" v-on:click="showTip = !showTip">Скрыть комментарий</button>
                             <p class="qComment-title">Комментарий: </p>
                             <p>{{ question.comment.text }}</p>
-                            <img class="qComment-img" v-if="question.comment.img !== ''" v-bind:src="'./' + question.comment.img">
+                            <img class="qComment-img" v-if="question.comment.img !== ''" v-bind:src="'./testData/' + question.comment.img">
                         </div>
                     </div>
                 </div>
