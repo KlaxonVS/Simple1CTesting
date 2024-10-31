@@ -1,57 +1,57 @@
 * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-    color: white;
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	color: white;
 }
 
 html, body {
-    background-image: url("./media/background.jpg");
-    background-size: cover;
-    background-repeat: repeat;
-    height: 100%;
-    width: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif;
-    font-size: large;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* flex-wrap: wrap; */
-    z-index: -100;
+	background-image: url("./media/background.jpg");
+	background-size: cover;
+	background-repeat: repeat;
+	height: 100%;
+	width: 100%;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif;
+	font-size: large;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* flex-wrap: wrap; */
+	z-index: -100;
 
 }
 
 body {
-    padding: 1em;
+	padding: 1em;
 }
 
 #app {
-    background-color: black;
-    margin: 1em;
-    padding: 2em;
-    border-radius: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: left;
-    position: relative;
-    
+	background-color: black;
+	margin: 1em;
+	padding: 2em;
+	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: left;
+	position: relative;
+	
 }
 
 .header, .footer {
-    text-align: center;
-    background-color: black;
-    border-radius: 1em;
-    position: relative;
+	text-align: center;
+	background-color: black;
+	border-radius: 1em;
+	position: relative;
 }
 
 .footer {
-    display: inline-flex;
-    justify-content: space-evenly;
-    margin: 0.5em;
+	display: inline-flex;
+	justify-content: space-evenly;
+	margin: 0.5em;
 }
 input[type=checkbox], input[type=radio]
 {
@@ -65,183 +65,183 @@ input[type=checkbox], input[type=radio]
 }
 
 #titleScreen-content {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 #titleScreen-title {
-    text-align: center;
-    font-size: xx-large;
-    font-weight: bold;
-    margin-bottom: 1em;
+	text-align: center;
+	font-size: xx-large;
+	font-weight: bold;
+	margin-bottom: 1em;
 }
 
 #titleScreen-settings {
-    margin: 0.5em 0.5em 0.5em 0.5em;
+	margin: 0.5em 0.5em 0.5em 0.5em;
 }
 
 .listTitle {
-    font-weight: bold;
-    margin-bottom: 1em;
+	font-weight: bold;
+	margin-bottom: 1em;
 }
 
 .listItem {
-    margin-bottom: 1em;
-    margin-right: 1em;
+	margin-bottom: 1em;
+	margin-right: 1em;
 }
 .answers {
-    list-style-position: inside;
+	list-style-position: inside;
 }
 
 .answer-template {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5em;
-    margin-bottom: 1em;
-    margin-top: 0.5em;
+	display: flex;
+	flex-direction: row;
+	gap: 0.5em;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
 }
 
 .aCheckbox, .aRadio {
-    margin-top: 1em;
-    margin-bottom: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 .chapter-title, .qComment-title {
-    font-weight: bold;
-    font-size: xx-large;
-    margin-bottom: 0.5em;
+	font-weight: bold;
+	font-size: xx-large;
+	margin-bottom: 0.5em;
 }
 
 .question-title {
-    font-weight: bold;
-    font-size: x-large;
-    margin-bottom: 1.5em;
+	font-weight: bold;
+	font-size: x-large;
+	margin-bottom: 1.5em;
 }
 
 .question-img, .qComment-img {
-    max-width: 100%;
-    max-height: 100%;
-    align-self: center;
-    margin-bottom: 1em;
+	max-width: 100%;
+	max-height: 100%;
+	align-self: center;
+	margin-bottom: 1em;
 }
 
 .right-answer {
-    font-weight: bold;
-    background-color:  #8cec8c;
-    color: black;
+	font-weight: bold;
+	background-color:  #8cec8c;
+	color: black;
 }
 
 .wrong-answer {
-    background-color:#FF7276;
-    font-weight: bold;
-    color: black;
+	background-color:#FF7276;
+	font-weight: bold;
+	color: black;
 }
 
 .aText {
-    color: inherit;
+	color: inherit;
 }
 
 [v-cloak] {
-    display: none !important;
+	display: none !important;
 }
 
 @property --angel {
-    syntax: '<angle>';
-    initial-value: 0deg;
-    inherits: false;
+	syntax: '<angle>';
+	initial-value: 0deg;
+	inherits: false;
 }
 
 #app::after, #app::before{
-    content: "";
-    background-image: conic-gradient(from var(--angel), transparent, white, gray, white, transparent);
-    position: absolute;
-    width: calc(100% + 0.5em);
-    height: calc(100% + 0.5em);
-    top: calc(-0.25em);
-    left: calc(-0.25em);
-    border-radius: 1em;
-    z-index: -2;
-    animation: spin 10s linear infinite;
+	content: "";
+	background-image: conic-gradient(from var(--angel), transparent, white, gray, white, transparent);
+	position: absolute;
+	width: calc(100% + 0.5em);
+	height: calc(100% + 0.5em);
+	top: calc(-0.25em);
+	left: calc(-0.25em);
+	border-radius: 1em;
+	z-index: -2;
+	animation: spin 10s linear infinite;
 }
 
 .header::after, .header::before, .footer::after, .footer::before {
-    content: "";
-    background-image: conic-gradient(from var(--angel), transparent, white, gray, white, transparent);
-    position: absolute;
-    width: calc(100% + 0.5em);
-    height: calc(100% + 0.5em);
-    top: calc(-0.25em);
-    left: calc(-0.25em);
-    border-radius: 1em;
-    z-index: -2;
-    animation: spin 10s linear infinite;
-    
+	content: "";
+	background-image: conic-gradient(from var(--angel), transparent, white, gray, white, transparent);
+	position: absolute;
+	width: calc(100% + 0.5em);
+	height: calc(100% + 0.5em);
+	top: calc(-0.25em);
+	left: calc(-0.25em);
+	border-radius: 1em;
+	z-index: -2;
+	animation: spin 10s linear infinite;
+	
 }
 
 .pageButton {
-    background-color: white !important;
-    color: black !important;
-    padding: 0.5em;
-    margin: 0.5em;
-    border-radius: 1em;
-    font-size: large;
-    cursor: pointer;
+	background-color: white !important;
+	color: black !important;
+	padding: 0.5em;
+	margin: 0.5em;
+	border-radius: 1em;
+	font-size: large;
+	cursor: pointer;
 }
 
 .pageButton:hover {
-    box-shadow: 0 0 1em whitesmoke;
+	box-shadow: 0 0 1em whitesmoke;
 }
 
 .header::before, .footer::before, #app::before {
-    filter: blur(em);
-    opacity: 0.5;
+	filter: blur(em);
+	opacity: 0.5;
 }
 
 @keyframes spin {
-    from {
-        --angel: 0deg;
-    }
-    to {
-        --angel: 360deg;
-    }
+	from {
+		--angel: 0deg;
+	}
+	to {
+		--angel: 360deg;
+	}
 }
 
 .postScriptum {
-    font-size: small;
-    font-style: italic;
-    color: whitesmoke;
+	font-size: small;
+	font-style: italic;
+	color: whitesmoke;
 }
 
 .chapterSelectionDiv {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin-bottom: 1em;
-    margin-top: 0.5em;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: left;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
 }
 
 .chapterSelection-item {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin-bottom: 1em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: left;
+	margin-bottom: 1em;
 }
 
 
 .listTitle-chapterSelection {
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin-bottom: 1em;
-    margin-top: 0.5em;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: left;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
 }
 
 .chapterSelection-subte {
-    font-size: small;
-    font-style: italic;
-    color: whitesmoke;
+	font-size: small;
+	font-style: italic;
+	color: whitesmoke;
 }

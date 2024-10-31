@@ -2,99 +2,99 @@
 <html>
 
 <head>
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
-    <script src="./scripts.js" defer></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="yandex-verification" content="5909434f04d30472" />
-    <meta name="google-site-verification" content="o0jYjNAk7tmZD2_vlPqNN3uhe8LLjpwmsY_cHrNes_g" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Тестирование, 1C, Профессионал, онлайн, Специалист, сертификация, ответы, тренажер, бесплатно">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="./media/favicon/1cP-16.png" sizes="16x16">
-    <link rel="icon" type="image/png" href="./media/favicon/1cP-32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="./media/favicon/1cP-96.png" sizes="96x96">
-    <title>Тестирование 1C:Профессионал</title>
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+	<script src="./scripts.js" defer></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="yandex-verification" content="5909434f04d30472" />
+	<meta name="google-site-verification" content="o0jYjNAk7tmZD2_vlPqNN3uhe8LLjpwmsY_cHrNes_g" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="Тестирование, 1C, Профессионал, онлайн, Специалист, сертификация, ответы, тренажер, бесплатно">
+	<link rel="stylesheet" href="./style.css">
+	<link rel="icon" type="image/png" href="./media/favicon/1cP-16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="./media/favicon/1cP-32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="./media/favicon/1cP-96.png" sizes="96x96">
+	<title>Тестирование 1C:Профессионал</title>
 </head>
 
 <body>
-    <div class="header">
-        <h2>Тестирование "1C:Профессионал" онлайн с ответами бесплатно</h1>
-    </div>
-    <div id="app" v-cloak>
-        
-        <div id="titleScreen" v-if="titleScreen === true">
-        <div id="titleScreen-content">
-            <!-- <h2 id="titleScreen-title">Тестирование "1C:Профессионал"</h1> -->
-            <div id="titleScreen-settings">
-            <p class="listTitle">Настройки:</p>
-            <ul class="list">
-                <li class="listItem">Включить комментарии: <input type="checkbox" v-model="allowTip"></li>
-                <li class="listItem">Включить проверку ответа: <input type="checkbox" v-model="allowCheck"></li>
-            </ul>
-            </div>
-            <div class="chapterSelectionDiv">
-                <p class="listTitle-chapterSelection">Разделы: <span class="chapterSelection-subte">*Если не выбрано ни одного раздела, то будут использованы все разделы.</span></p>
-                <div class="chapterSelection">
-                    <div class="chapterSelection-item" v-for="(chapter, indexC) in testData.chapters">
-                        <label class="chapterSelection-item-title" v-on:click="chooseChapter(indexC)">
-                            <input type="checkbox" v-bind:id="'chapterSelection-item-' + indexC" v-on:change="chooseChapter(indexC)">
-                            {{ indexC + 1 }}. {{ chapter.title }}
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <p v-if="msg !== ''">Результат: <p>{{ msg }}</p> </p>
-            <button class="pageButton" v-on:click="startTest()">{{ msg !== '' ? 'Начать сначала' : 'Начать' }}</button>
-            <p class="postScriptum">*Вопросы в процессе обработки. 4 из 14 разделов доступны полностью. </p>
-        </div>
-        </div>
-        <div v-else>
-        <div v-for="(chapter, indexC) in chaptersData" class="chapterDiv">
-            <!-- Chapter -->
-            <div class="chapter" v-show="chapterIndx === indexC">
-                <p class="chapter-title">Раздел: {{ chapter.title }}</p>
-                <div v-for="(question, indexQ) in chapter.questions" class="questionDiv">
-                    <!-- Question -->
-                    <div class="question" v-show="questionIndx === indexQ">
-                        <p class="question-title">{{ question.title }}</p>
-                        <img class="question-img" v-if="question.img != ''" v-bind:src="'./testData/' + question.img" alt="Отсутствует изображение: './testData/' + question.img">
-                        <!-- Answers -->
-                        <ol class="answers">
-                            <div class="answer-template" v-for="(answer, indexA) in question.answers">
-                            <input v-if="question.multiple" class="aCheckbox" type="checkbox" v-bind:name="'CheckAnswer-' + indexC + '-' + indexQ" v-on:change="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
-                                <input v-else class="aRadio" type="radio" v-bind:name="'CheckAnswer-' + indexC + '-' + indexQ" v-on:click="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
-                            <li class="answer" v-bind:id="'Answer-' + indexC + '-' + indexQ + '-' + indexA">
-                                <label class="aText" v-on:click="chooseAnswer(indexC, indexQ, indexA, answer)">{{ answer.text }}</label>
-                            </li>
-                        </div>
-                        </ol>
-                        <!-- Tip -->
-                        <div class="qComment" v-show="showTip">
-                            <button class="pageButton" v-show="allowTip" v-on:click="showTip = !showTip">Скрыть комментарий</button>
-                            <p class="qComment-title">Комментарий: </p>
-                            <p>{{ question.comment.text }}</p>
-                            <img class="qComment-img" v-if="question.comment.img !== ''" v-bind:src="'./testData/' + question.comment.img">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Menu -->
-        <menu>
-            <button class="pageButton" v-show="!qIsFirst" v-on:click="lChangeQuestion(-1)">Назад</button>
-            <button class="pageButton" v-show="!qIsLast" v-on:click="lChangeQuestion(1)">Следующий</button>
-            <button class="pageButton" v-show="allowCheck" v-on:click="lCheckAnswer()">Проверить ответ</button>
-            <button class="pageButton" v-show="allowTip && hasTip" v-on:click="showTip = !showTip">Показать/скрыть комментарий</button>
-            <button class="pageButton" v-show="qIsLast" id="showResult" v-on:click="lShowResult()">Результат</button>
-        </menu>
-        </div>
-    </div>
-    <div class="footer">
-        <p class="footer-text"><a href="https://t.me/techSupportKlaxonVS" target="_blank">Техподдержка и обратная связь.</a></p>
-        <p class="footer-text">Материалы для теста были взяты из открытых источников.</p>
-        <p class="footer-text">&#10084; Поддержать проект: <a href="https://www.donationalerts.com/r/KlaxonVS" target="_blank">DonationAlerts</a></p>
-    </div>
+	<div class="header">
+		<h2>Тестирование "1C:Профессионал" онлайн с ответами бесплатно</h1>
+	</div>
+	<div id="app" v-cloak>
+
+		<div id="titleScreen" v-if="titleScreen === true">
+		<div id="titleScreen-content">
+			<!-- <h2 id="titleScreen-title">Тестирование "1C:Профессионал"</h1> -->
+			<div id="titleScreen-settings">
+			<p class="listTitle">Настройки:</p>
+			<ul class="list">
+				<li class="listItem">Включить комментарии: <input type="checkbox" v-model="allowTip"></li>
+				<li class="listItem">Включить проверку ответа: <input type="checkbox" v-model="allowCheck"></li>
+			</ul>
+			</div>
+			<div class="chapterSelectionDiv">
+				<p class="listTitle-chapterSelection">Разделы: <span class="chapterSelection-subte">*Если не выбрано ни одного раздела, то будут использованы все разделы.</span></p>
+				<div class="chapterSelection">
+					<div class="chapterSelection-item" v-for="(chapter, indexC) in testData.chapters">
+						<label class="chapterSelection-item-title" v-on:click="chooseChapter(indexC)">
+							<input type="checkbox" v-bind:id="'chapterSelection-item-' + indexC" v-on:change="chooseChapter(indexC)">
+							{{ indexC + 1 }}. {{ chapter.title }}
+						</label>
+					</div>
+				</div>
+			</div>
+			<p v-if="msg !== ''">Результат: <p>{{ msg }}</p> </p>
+			<button class="pageButton" v-on:click="startTest()">{{ msg !== '' ? 'Начать сначала' : 'Начать' }}</button>
+			<p class="postScriptum">*Вопросы в процессе обработки. 4 из 14 разделов доступны полностью. </p>
+		</div>
+		</div>
+		<div v-else>
+		<div v-for="(chapter, indexC) in chaptersData" class="chapterDiv">
+			<!-- Chapter -->
+			<div class="chapter" v-show="chapterIndx === indexC">
+				<p class="chapter-title">Раздел: {{ chapter.title }}. <span style="font-size: small;font-style: italic;color: whitesmoke;">Вопросов в разделе: {{ chapter.questions.length }}</span></p>
+				<div v-for="(question, indexQ) in chapter.questions" class="questionDiv">
+					<!-- Question -->
+					<div class="question" v-show="questionIndx === indexQ">
+						<p class="question-title">{{ questionIndx + 1 }}. {{ question.title }}</p>
+						<img class="question-img" v-if="question.img != ''" v-bind:src="'./testData/' + question.img" alt="Отсутствует изображение: './testData/' + question.img">
+						<!-- Answers -->
+						<ol class="answers">
+							<div class="answer-template" v-for="(answer, indexA) in question.answers">
+							<input v-if="question.multiple" class="aCheckbox" type="checkbox" v-bind:name="'CheckAnswer-' + indexC + '-' + indexQ" v-on:change="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
+								<input v-else class="aRadio" type="radio" v-bind:name="'CheckAnswer-' + indexC + '-' + indexQ" v-on:click="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
+							<li class="answer" v-bind:id="'Answer-' + indexC + '-' + indexQ + '-' + indexA">
+								<label class="aText" v-on:click="chooseAnswer(indexC, indexQ, indexA, answer)">{{ answer.text }}</label>
+							</li>
+						</div>
+						</ol>
+						<!-- Tip -->
+						<div class="qComment" v-show="showTip">
+							<button class="pageButton" v-show="allowTip" v-on:click="showTip = !showTip">Скрыть комментарий</button>
+							<p class="qComment-title">Комментарий: </p>
+							<p>{{ question.comment.text }}</p>
+							<img class="qComment-img" v-if="question.comment.img !== ''" v-bind:src="'./testData/' + question.comment.img">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Menu -->
+		<menu>
+			<button class="pageButton" v-show="!qIsFirst" v-on:click="lChangeQuestion(-1)">Назад</button>
+			<button class="pageButton" v-show="!qIsLast" v-on:click="lChangeQuestion(1)">Следующий</button>
+			<button class="pageButton" v-show="allowCheck" v-on:click="lCheckAnswer()">Проверить ответ</button>
+			<button class="pageButton" v-show="allowTip && hasTip" v-on:click="showTip = !showTip">Показать/скрыть комментарий</button>
+			<button class="pageButton" v-show="qIsLast" id="showResult" v-on:click="lShowResult()">Результат</button>
+		</menu>
+		</div>
+	</div>
+	<div class="footer">
+		<p class="footer-text"><a href="https://t.me/techSupportKlaxonVS" target="_blank">Техподдержка и обратная связь.</a></p>
+		<p class="footer-text">Материалы для теста были взяты из открытых источников.</p>
+		<p class="footer-text">&#10084; Поддержать проект: <a href="https://www.donationalerts.com/r/KlaxonVS" target="_blank">DonationAlerts</a></p>
+	</div>
 </body>
 
 </html>
