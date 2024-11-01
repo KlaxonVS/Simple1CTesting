@@ -38,7 +38,7 @@ body {
 	flex-wrap: wrap;
 	align-items: left;
 	position: relative;
-	
+	word-break: break-all;
 }
 
 .header, .footer {
