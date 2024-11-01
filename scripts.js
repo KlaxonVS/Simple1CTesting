@@ -268,3 +268,29 @@ function showResult(pageO) {
 	}
 	pageO.msg = `Правильных ответов: ${(rightAnswers / totalQ * 100).toFixed(2)}% (${rightAnswers}/${totalQ})`;
 }
+
+document.addEventListener('keydown', (event) => {
+    let key = event.key || event.keyCode; // Поддержка старых версий браузеров!
+    switch(key) {
+        case 'ArrowLeft': 
+        case 37:
+            makeAction(app.lChangeQuestion(-1)); 
+            event.preventDefault();
+            break;
+        // case 'ArrowUp': 
+        // case 38:
+        //     makeAction('up'); 
+        //     event.preventDefault();
+        //     break;
+        case 'ArrowRight': 
+        case 39:
+            makeAction(app.lChangeQuestion(1)); 
+            event.preventDefault();
+            break;
+        // case 'ArrowDown': 
+        // case 40:
+        //     makeAction('down'); 
+        //     event.preventDefault();
+        //     break;
+    }
+});
