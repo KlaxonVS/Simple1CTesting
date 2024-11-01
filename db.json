@@ -1359,7 +1359,7 @@
 												},
 												{
 														"text": "верны все указанные ответы",
-														"isCorrect": false
+														"isCorrect": true
 												}
 										],
 										"multiple": false,
