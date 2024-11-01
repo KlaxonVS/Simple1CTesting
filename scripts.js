@@ -22,7 +22,7 @@ const TestO = {
 			chaptersData: [],
 			Answers: [],
 			hasTip: false,
-			chaptersq: 0,
+			chaptersQ: 0,
 		}
 	},
 	async created() {
