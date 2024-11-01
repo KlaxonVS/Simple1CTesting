@@ -270,12 +270,11 @@ function showResult(pageO) {
 }
 
 document.addEventListener('keydown', (event) => {
-	console.log(event);
     let key = event.key || event.keyCode; // Поддержка старых версий браузеров!
     switch(key) {
         case 'ArrowLeft': 
         case 37:
-            makeAction(app.lChangeQuestion(-1)); 
+            app.lChangeQuestion(-1); 
             event.preventDefault();
             break;
         // case 'ArrowUp': 
@@ -285,7 +284,7 @@ document.addEventListener('keydown', (event) => {
         //     break;
         case 'ArrowRight': 
         case 39:
-            makeAction(app.lChangeQuestion(1)); 
+            app.lChangeQuestion(1); 
             event.preventDefault();
             break;
         // case 'ArrowDown': 
