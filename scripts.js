@@ -274,8 +274,10 @@ document.addEventListener('keydown', (event) => {
     switch(key) {
         case 'ArrowLeft': 
         case 37:
-            app.lChangeQuestion(-1); 
-            event.preventDefault();
+			if (app.titleScreen === false) {
+				app.lChangeQuestion(-1); 
+            	event.preventDefault();
+			}
             break;
         // case 'ArrowUp': 
         // case 38:
@@ -284,8 +286,10 @@ document.addEventListener('keydown', (event) => {
         //     break;
         case 'ArrowRight': 
         case 39:
-            app.lChangeQuestion(1); 
-            event.preventDefault();
+			if (app.titleScreen === false) {
+            	app.lChangeQuestion(1); 
+            	event.preventDefault();
+			}
             break;
         // case 'ArrowDown': 
         // case 40:
