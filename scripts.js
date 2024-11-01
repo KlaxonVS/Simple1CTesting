@@ -22,12 +22,15 @@ const TestO = {
 			chaptersData: [],
 			Answers: [],
 			hasTip: false,
+			chaptersq: 0,
 		}
 	},
 	async created() {
+			this.chaptersQ = 0;
 			let url = "https://raw.githubusercontent.com/KlaxonVS/Simple1CTesting/refs/heads/main/db.json";
 			let response = await fetch(url).then(response => response.json()).catch(err => console.log(err));
 			this.testData =  await response;
+			this.chaptersQ = this.testData.chapters.length;
 			this.chaptersData = getChapters(this);
 			this.Answers = initAnswers(this);
 

@@ -46,14 +46,14 @@
 			</div>
 			<p v-if="msg !== ''">Результат: <p>{{ msg }}</p> </p>
 			<button class="pageButton" v-on:click="startTest()">{{ msg !== '' ? 'Начать сначала' : 'Начать' }}</button>
-			<p class="postScriptum">*Вопросы в процессе обработки. 5 из 14 разделов доступны полностью. </p>
+			<p class="postScriptum">*Вопросы в процессе обработки. {{ chaptersQ }} из 14 разделов доступны полностью. </p>
 		</div>
 		</div>
 		<div v-else>
 		<div v-for="(chapter, indexC) in chaptersData" class="chapterDiv">
 			<!-- Chapter -->
 			<div class="chapter" v-show="chapterIndx === indexC">
-				<p class="chapter-title">Раздел: {{ chapter.title }}. <span style="font-size: small;font-style: italic;color: whitesmoke;">Вопросов в разделе: {{ chapter.questions.length }}</span></p>
+				<p class="chapter-title">Раздел: {{ chapter.title }}. <br class="closesubstr"><span style="font-size: small;font-style: italic;color: whitesmoke;">Вопросов в разделе: {{ chapter.questions.length }}</span></p>
 				<div v-for="(question, indexQ) in chapter.questions" class="questionDiv">
 					<!-- Question -->
 					<div class="question" v-show="questionIndx === indexQ">
