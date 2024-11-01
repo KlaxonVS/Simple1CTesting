@@ -274,7 +274,7 @@ document.addEventListener('keydown', (event) => {
     switch(key) {
         case 'ArrowLeft': 
         case 37:
-			if (app.titleScreen === false) {
+			if (app.titleScreen === false && app.qIsFirst === false) {
 				app.lChangeQuestion(-1); 
             	event.preventDefault();
 			}
@@ -286,7 +286,7 @@ document.addEventListener('keydown', (event) => {
         //     break;
         case 'ArrowRight': 
         case 39:
-			if (app.titleScreen === false) {
+			if (app.titleScreen === false && app.qIsLast === false) {
             	app.lChangeQuestion(1); 
             	event.preventDefault();
 			}
