@@ -270,6 +270,7 @@ function showResult(pageO) {
 }
 
 document.addEventListener('keydown', (event) => {
+	console.log(event);
     let key = event.key || event.keyCode; // Поддержка старых версий браузеров!
     switch(key) {
         case 'ArrowLeft': 
