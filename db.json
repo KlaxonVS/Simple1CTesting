@@ -616,7 +616,7 @@
 												},
 												{
 														"text": "с MS SQL сервер можно работать с рабочего сервера под управлением операционных систем Windows, c другими СУБД как из-под Windows, так и из-под Linux",
-														"isCorrect": false
+														"isCorrect": true
 												}
 										],
 										"multiple": false,
