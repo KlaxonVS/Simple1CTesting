@@ -57,7 +57,8 @@
 				<div v-for="(question, indexQ) in chapter.questions" class="questionDiv">
 					<!-- Question -->
 					<div class="question" v-show="questionIndx === indexQ">
-						<p class="question-title word-break">{{ questionIndx + 1 }}. {{ question.title }}</p>
+						<p class="question-title word-break">{{ questionIndx + 1 }}. {{ question.title }} <img class="questionYAsearch-img" alt="Поиск в Яндексе" title="Поиск в Яндексе" onclick="searchQuestion(1)" src="https://yastatic.net/s3/home-static/_/nova/c101ceb5.png"></p>
+						
 						<img class="question-img" v-if="question.img != ''" v-bind:src="'./testData/' + question.img" alt="Отсутствует изображение: './testData/' + question.img">
 						<!-- Answers -->
 						<ol class="answers">

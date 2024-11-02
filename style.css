@@ -253,3 +253,16 @@ input[type=checkbox], input[type=radio]
 .word-break {
 	word-break: break-word;
 }
+
+.footer-text {
+	overflow: hidden;
+}
+
+.questionYAsearch-img {
+	max-width: 1em;
+	max-height: 1em;
+	border-radius: 1em;
+	overflow: hidden;
+	opacity: 0.8;
+	/* filter: grayscale(100%); */
+}

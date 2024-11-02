@@ -298,3 +298,16 @@ document.addEventListener('keydown', (event) => {
         //     break;
     }
 });
+
+function searchQuestion(searchengine) {
+	
+	let question = app.chaptersData[app.chapterIndx].questions[app.questionIndx].title;
+	yasearch = "https://yandex.ru/search/?text=" + "1с тестирование " + question;
+	googlesearch = "https://google.com/search?q=" + "1с тестирование " + question;
+
+	if (searchengine === 1) {
+		window.open(yasearch, "_blank").focus();
+	} else if (searchengine === 2) {
+		window.open(googlesearch, "_blank").focus();
+	}
+}
