@@ -38,7 +38,7 @@
 				<div class="chapterSelection">
 					<div class="chapterSelection-item" v-for="(chapter, indexC) in testData.chapters">
 						<label class="chapterSelection-item-title" v-on:click="chooseChapter(indexC)">
-							<input type="checkbox" v-bind:id="'chapterSelection-item-' + indexC" v-on:change="chooseChapter(indexC)">
+							<input type="checkbox" class=" word-break" v-bind:id="'chapterSelection-item-' + indexC" v-on:change="chooseChapter(indexC)">
 							{{ indexC + 1 }}. {{ chapter.title }}
 						</label>
 					</div>
@@ -53,11 +53,11 @@
 		<div v-for="(chapter, indexC) in chaptersData" class="chapterDiv">
 			<!-- Chapter -->
 			<div class="chapter" v-show="chapterIndx === indexC">
-				<p class="chapter-title">Раздел: {{ chapter.title }}. <br class="closesubstr"><span style="font-size: small;font-style: italic;color: whitesmoke;">Вопросов в разделе: {{ chapter.questions.length }}</span></p>
+				<p class="chapter-title">Раздел: {{ chapter.title }}. <br class="closesubstr word-break"><span style="font-size: small;font-style: italic;color: whitesmoke;">Вопросов в разделе: {{ chapter.questions.length }}</span></p>
 				<div v-for="(question, indexQ) in chapter.questions" class="questionDiv">
 					<!-- Question -->
 					<div class="question" v-show="questionIndx === indexQ">
-						<p class="question-title">{{ questionIndx + 1 }}. {{ question.title }}</p>
+						<p class="question-title word-break">{{ questionIndx + 1 }}. {{ question.title }}</p>
 						<img class="question-img" v-if="question.img != ''" v-bind:src="'./testData/' + question.img" alt="Отсутствует изображение: './testData/' + question.img">
 						<!-- Answers -->
 						<ol class="answers">
@@ -65,7 +65,7 @@
 							<input v-if="question.multiple" class="aCheckbox" type="checkbox" v-bind:name="'CheckAnswer-' + indexC + '-' + indexQ" v-on:change="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
 								<input v-else class="aRadio" type="radio" v-bind:name="'CheckAnswer-' + indexC + '-' + indexQ" v-on:click="lProcessAnswer(indexC, indexQ, indexA, answer, $event.target.checked)">
 							<li class="answer" v-bind:id="'Answer-' + indexC + '-' + indexQ + '-' + indexA">
-								<label class="aText" v-on:click="chooseAnswer(indexC, indexQ, indexA, answer)">{{ answer.text }}</label>
+								<label class="aText word-break" v-on:click="chooseAnswer(indexC, indexQ, indexA, answer)">{{ answer.text }}</label>
 							</li>
 						</div>
 						</ol>
@@ -73,7 +73,7 @@
 						<div class="qComment" v-show="showTip">
 							<button class="pageButton" v-show="allowTip" v-on:click="showTip = !showTip">Скрыть комментарий</button>
 							<p class="qComment-title">Комментарий: </p>
-							<p>{{ question.comment.text }}</p>
+							<p class="word-break">{{ question.comment.text }}</p>
 							<img class="qComment-img" v-if="question.comment.img !== ''" v-bind:src="'./testData/' + question.comment.img">
 						</div>
 					</div>
