@@ -13804,10 +13804,6 @@
 								{
 									"text":"Значения свойств \"Дата\" и \"Номер\"",
 									"isCorrect":false
-								},
-								{
-									"text":"",
-									"isCorrect":false
 								}
 							],
 							"multiple":false,
